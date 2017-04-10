@@ -17,7 +17,7 @@ class DefaultController extends Controller
 
 	public function contact()
 	{
-		$this->show('default/contact');
+		$this->show('page/contact');
 	}
 
 }

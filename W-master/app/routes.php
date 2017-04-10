@@ -4,5 +4,5 @@
 		['GET|POST', '/', 'Default#home', 'default_home'],
 
 		/* La route pour les contacts */
-		['GET|POST', '/contact', 'Default#contact', 'default_contact'],
+		['GET|POST', '/contact', 'Default#contact', 'page_contact'],
 	);
