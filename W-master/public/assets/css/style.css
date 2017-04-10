@@ -6,14 +6,14 @@ body {
 }
 
 .mainimg{
-  background: url(../public/assets/img/a.jpg);
+  background: url(../img/a.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .banner {
   position: relative;
-  background-image: url(../public/assets/img/z.jpg);
+  background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
   height: 200px; 
@@ -383,7 +383,7 @@ footer{
   color: black;
   text-align: center;
   padding: 10px;
-  background-image: url(../public/assets/img/z.jpg);
+  background-image: url(../img/z.jpg);
   background-size: cover;
   border: 1px solid white;
   margin-top: auto;
