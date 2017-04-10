@@ -10,10 +10,10 @@
 	<link href="../public/assets/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
- 	<link rel="stylesheet" href=".../public/assets/css/style.css">
+ 	<link rel="stylesheet" href="../public/assets/css/style.css">
 
 	<!-- lien pour le CSS -->
-	<link rel="stylesheet" href=".../public/assets/css/contact.css">
+	<link rel="stylesheet" href="../public/assets/css/contact.css">
 	<!-- lien pour le jquery -->
 	<script
 			src="https://code.jquery.com/jquery-3.1.1.min.js"
