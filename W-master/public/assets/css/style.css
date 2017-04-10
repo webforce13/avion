@@ -6,14 +6,14 @@ body {
 }
 
 .mainimg{
-  background: url(../public/assets/img/a.jpg);
+  background: url(../img/a.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .banner {
   position: relative;
-  background-image: url(../public/assets/img/z.jpg);
+  background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
   height: 200px; 
@@ -63,7 +63,7 @@ h4 {
 
 .diamond {
   position: absolute;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,0.1);
   width: 72%;
   height: 200px;
   right: 0;
@@ -379,14 +379,14 @@ h1.panels__headline{
 
 
 footer{
-
+  margin-top: 70px;
   color: black;
   text-align: center;
   padding: 10px;
-  background-image: url(../public/assets/img/z.jpg);
+  background-image: url(../img/z.jpg);
   background-size: cover;
   border: 1px solid white;
-  margin-top: auto;
+  
   
 }
 
