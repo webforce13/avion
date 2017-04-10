@@ -5,7 +5,7 @@
       </ul>  
 
       <ul>
-        <img src="./img/logoA.png" alt="logoplane" id="logoplane">
+        <img src="../public/assets/img/logoA.png" alt="logoplane" id="logoplane">
         <br>
         <section class="footer-section">
         <span>Contactez Nous :</span>
