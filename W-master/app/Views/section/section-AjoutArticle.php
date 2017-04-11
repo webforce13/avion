@@ -6,11 +6,11 @@
 	<input id="designation" name="Designation" placeholder="Designation" type="text">
 	<br>
 	<label for="condition">Etat de la piece</label>
-	<option value="condition">
-		<select name="Bon" id="Bon">BON</select>
-		<select name="Moyen" id="Moyen">Moyen</select>
-		<select name="Mauvais" id="Mauvais">Mauvais</select>
-	</option>
+	<select> value="condition">
+		<option name="Bon" id="Bon">BON</option>
+		<option name="Moyen" id="Moyen">Moyen</option>
+		<option name="Mauvais" id="Mauvais">Mauvais</option>
+	</select>
 	<br>
 	<label for="Description">La Description de la piece</label>
 	<textarea name="description" id="Description" cols="30" rows="10"></textarea>		
