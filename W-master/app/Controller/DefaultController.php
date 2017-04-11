@@ -22,7 +22,7 @@ class DefaultController extends Controller
 
 	public function acceuil()
 	{
-		$this->show('page/acceuil');
+		$this->show('page/accueil');
 	}
 
 }
