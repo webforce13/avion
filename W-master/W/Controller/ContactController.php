@@ -76,7 +76,7 @@ class ContactController extends Controller
 										[":telephone"   => $telephone],
 										[":commentaire" => $commentaire]);
 
-				$message = " Votre message à était envoyer, nous vous contacterons dans les plus bref délais."
+				$message = " Votre message a était envoyé, nous vous contacterons dans les plus bref délais."
 			}
 			else
 			{
