@@ -20,7 +20,7 @@ class DefaultController extends Controller
 		$this->show('page/contact');
 	}
 
-	public function acceuil()
+	public function accueil()
 	{
 		$this->show('page/accueil');
 	}
