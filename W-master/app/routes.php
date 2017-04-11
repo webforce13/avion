@@ -11,4 +11,7 @@
 
 		/* La route pour l info */
 		['GET|POST', '/info', 'Default#info', 'page_info'],
+		
+		/* La route pour l'ajout de l'article dans la base de donné*/
+		['GET|POST', '/AjoutArticle', 'Default#AjoutArticle', 'page_AjoutArticle'],
 	);

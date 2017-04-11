@@ -25,4 +25,9 @@ class DefaultController extends Controller
 		$this->show('page/accueil');
 	}
 
+	public function AjoutArticle()
+	{
+		$this->show('page/AjoutArticle');
+	}
+
 }
