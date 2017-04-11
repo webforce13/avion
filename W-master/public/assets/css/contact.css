@@ -110,3 +110,22 @@ color: green;
 display: none;
 }
 
+footer{
+  margin-top: 70px;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  background-image: url(../img/z.jpg);
+  background-size: cover;
+  border: 1px solid white;
+  
+  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none
+}

@@ -5,4 +5,7 @@
 
 		/* La route pour les contacts */
 		['GET|POST', '/contact', 'Default#contact', 'page_contact'],
+
+		/* La route pour les contacts */
+		['GET|POST', '/acceuil', 'Default#acceuil', 'page_acceuil'],
 	);
