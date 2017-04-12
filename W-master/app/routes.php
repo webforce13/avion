@@ -11,4 +11,7 @@
 
 		/* La route pour l info */
 		['GET|POST', '/info', 'Default#info', 'page_info'],
+
+		/* La route pour article */
+		['GET|POST', '/article', 'Default#article', 'page_article'],
 	);

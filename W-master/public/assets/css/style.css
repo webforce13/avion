@@ -398,5 +398,104 @@ a {
 }
 
 
+/************************************************************
+*                       CSS page article                    *
+************************************************************/
+
+#titrearticle{
+  text-align: center;
+  border: 3px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.carousel-container {
+  margin: 5px auto;
+  height: 100%;
+  padding-top: 50%; 
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 25px 6px rgba(0,0,0,1);
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.carousel li {  
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel li img {
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnails {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.thumbnails li {
+  display: inline-block;
+  list-style-type: none; 
+  max-width: 100px;
+  padding: 0;
+  border: none;
+  margin: 5px;
+  transition: 0.25s;
+  box-sizing: border-box;
+  
+}
+
+.thumbnails li img {
+  height: 100%;
+  width: 100%;
+  vertical-align: text-bottom;
+}
+
+.thumbnails li.active, .thumbnails li:hover {
+  border: 3px #8fc35f solid;
+}
 
 
+/********************table*************************/
+
+
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    
+  }
+
+
+  main {
+    background: url(../img/a.jpg);
+  }
