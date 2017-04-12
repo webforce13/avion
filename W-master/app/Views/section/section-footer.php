@@ -16,7 +16,7 @@
         </section>
         </ul>
 
-        <span class="copyright">©2017 “AERO RECYCLING SOCIETY - Marignane, France </span>
+        <span class="copyright">©2017 “DEEE RECYCLAGE AERONAUTIQUE - Marignane, France </span>
         <span > - All Rights Reserved - </span>
         </div>
         </section>
