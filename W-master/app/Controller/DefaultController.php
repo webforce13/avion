@@ -156,6 +156,7 @@ CODEHTML;
 			}
 		}
 		$this->show('page/contact');
+	}
 
 	public function article()
 	{
