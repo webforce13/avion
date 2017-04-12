@@ -114,6 +114,7 @@ a {
   border: 3px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #8fc35f;
 }
 
 .body {
@@ -194,12 +195,15 @@ a {
 
 
 table{
-    border: 3px solid black;
-    border-collapse: collapse;
+  color: white;
+  border: 3px solid black;
+  border-collapse: collapse;
 }
 
 main {
-    background: url(../img/a.jpg);
+
+  margin-top: -22px;
+  background: url(../img/a.jpg);
   background-size: cover;
   background-position: center;
   }
