@@ -30,4 +30,8 @@ class DefaultController extends Controller
 		$this->show('page/article');
 	}
 
+	public function ajoutArticle()
+	{
+		$this->show('page/AjoutArticle');
+	}
 }

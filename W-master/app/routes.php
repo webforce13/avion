@@ -14,4 +14,7 @@
 
 		/* La route pour article */
 		['GET|POST', '/article', 'Default#article', 'page_article'],
+
+		/* La route pour article */
+		['GET|POST', '/ajoutArticle', 'Default#ajoutArticle', 'page_ajoutArticle'],
 	);
