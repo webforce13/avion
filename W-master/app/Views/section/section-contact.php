@@ -20,7 +20,7 @@
 
 		<br>
 
-		<lable for="Commentaire">Commentaire:</lable>
+		<label> for="Commentaire">Commentaire:</label>
 		<br>
 		<textarea name="Commentaire" id="Commentaire" cols="30" rows="10" class="obligatoire">	
 		</textarea>
