@@ -1,24 +1,32 @@
-<form action="AjoutArticle.php" method="POST">
+<form action="" method="POST" enctype="multipart/form-data">
 	<label for="ref">Référence</label>
 	<input id="ref" name="ref" placeholder="mettre la Référence" type="text">
 	<br>
 	<label for="designation">Designation</label>
-	<input id="designation" name="Designation" placeholder="Designation" type="text">
+	<input id="designation" name="designation" placeholder="Designation" type="text">
 	<br>
 	<label for="condition">Etat de la piece</label>
-	<select> value="condition">
-		<option name="Bon" id="Bon">BON</option>
-		<option name="Moyen" id="Moyen">Moyen</option>
-		<option name="Mauvais" id="Mauvais">Mauvais</option>
+	<select name="condition" value="">
+		<option value="Bon" selected id="Bon">BON</option>
+		<option value="Moyen" id="Moyen">Moyen</option>
+		<option value="Mauvais" id="Mauvais">Mauvais</option>
 	</select>
 	<br>
 	<label for="Description">La Description de la piece</label>
 	<textarea name="description" id="Description" cols="30" rows="10"></textarea>		
 	<br>
 	<label for="quantite">Les Quantitées des pieces Disponible </label>
-	<input type="number" name="quantite" id="quantite">
+	<input type="number" min="0" name="quantite" id="quantite">
 	<br>
-	<label for="image">Inserée les images</label>
+	<label for="image">Inserée photo 1:</label>
+	<input name="image" id="image" type="file">
+	<br>
+	<br>
+	<label for="image">Inserée photo 2:</label>
+	<input name="image" id="image" type="file">
+	<br>
+	<br>
+	<label for="image">Inserée photo 3:</label>
 	<input name="image" id="image" type="file">
 	<br>
 	<button type="submit" name="btnSub" >ENVOYER</button>

@@ -70,11 +70,7 @@ class ContactController extends Controller
 
 			{
 				$objetInscription = new \Model\Contact;
-				$objetInscription->insert(
-										[":nom"         => $nom],
-										[":email"       => $email],
-										[":telephone"   => $telephone],
-										[":commentaire" => $commentaire]);
+				$objetInscription->EnvoieMail();
 
 				$message = " Votre message a était envoyé, nous vous contacterons dans les plus bref délais."
 			}
