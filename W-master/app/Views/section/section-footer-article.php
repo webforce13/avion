@@ -16,7 +16,7 @@
         </section>
         </ul>
 
-        <span class="copyright">©2017 “DEEE RECYCLAGE AERONAUTIQUE - Marignane, France </span>
+        <span class="copyright">©2017 “AERO RECYCLING SOCIETY - Marignane, France </span>
         <span > - All Rights Reserved - </span>
         </div>
         </section>
@@ -24,7 +24,8 @@
   
   <script src="../public/assets/js/main.js"></script>
   <script src="../public/assets/js/index.js"></script>
+  <script src="../public/assets/js/article.js"></script>
+
 
   </body>
   </html>
-

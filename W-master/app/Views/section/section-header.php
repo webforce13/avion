@@ -33,15 +33,14 @@
 </head>
 
 <body>
-  <header class="banner">
-      <div class="diamond">
-    <div></div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">
+      </a>
+      </div>
   </div>
-  <div></div>   
-  <div class="aerotop"> 
-  <h1 class="text">AERO RECYCLING SOCIETY</h1>
-  <div class="logotop"><h3> - Société de recyclage aéronautique - <img src="../public/assets/img/Aircraft-logo.png" alt="logoreact" id="logoreact"></h3></div>
-  </div>
-  </header>
-  <main>
+</nav>
 
+ <main>

@@ -1,6 +1,6 @@
 body {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   background-size: cover;
   font-family: 'Suez One', serif;   
 }
@@ -11,39 +11,29 @@ body {
   background-position: center;
 }
 
-.banner {
-  position: relative;
+.navbar {  
   background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
-  height: 200px; 
+  height: 100%; 
   border: 1px solid white;
 }
+
+
 
 #logoplane{
   position: relative;
   width: 100px; 
 }
 
-#logoreact{
-  position: absolute;   
-  width: 100px;  
-  margin-top: -15px;
-  margin-left: 10px;
-}
-
-.banner .text {
-  position: relative;
-  padding-top: 20px;
-  font-size: 50px;  
-}
 
 header h1{
-  font-family: 'Faster One', cursive;
+  margin-left: 30%;
+  position: absolute;  
   color: black;
-  font-size: 50px;
+  font-size: 30px;
   text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px, rgba(255, 255, 255, 0.4) 0px -4px 30px;
-  text-align: center;
+  
 }
 
 header h3{
@@ -57,47 +47,15 @@ h4 {
   font-size: 20px;
 }
 
-/*****************************************************
-*                       BANNER                       *
-*****************************************************/
 
-.diamond {
-  position: absolute;
-  background-color: rgba(0,0,0,0.1);
-  width: 72%;
-  height: 200px;
-  right: 0;
-  -moz-transition: width 2s;
-  -o-transition: width 2s;
-  -webkit-transition: width 2s;
-  transition: width 1s;
+#logotop {
+  width: 150px;
+  padding-left: 45%;
+    
 }
 
-.diamond:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
-  left: -100px;
-  border-right: 100px solid rgba(0,0,0,.1);
-  border-bottom: 100px solid rgba(0,0,0,0);
-}
 
-.diamond div:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: -100px;
-  border-right: 100px solid rgba(0,0,0,.1);
-  border-top: 100px solid rgba(0,0,0,0);
-}
 
-.banner:hover .diamond {
-  width: 25%;
-}
 
 
 /****************************************************
@@ -244,6 +202,8 @@ h1.panels__headline{
  
 }
 @media (max-width: 640px) {
+
+
   .panels {
     width: 100%;
     height: 200vh;
@@ -398,5 +358,104 @@ a {
 }
 
 
+/************************************************************
+*                       CSS page article                    *
+************************************************************/
+
+#titrearticle{
+  text-align: center;
+  border: 3px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.carousel-container {
+  margin: 5px auto;
+  height: 100%;
+  padding-top: 50%; 
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 25px 6px rgba(0,0,0,1);
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.carousel li {  
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel li img {
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnails {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.thumbnails li {
+  display: inline-block;
+  list-style-type: none; 
+  max-width: 100px;
+  padding: 0;
+  border: none;
+  margin: 5px;
+  transition: 0.25s;
+  box-sizing: border-box;
+  
+}
+
+.thumbnails li img {
+  height: 100%;
+  width: 100%;
+  vertical-align: text-bottom;
+}
+
+.thumbnails li.active, .thumbnails li:hover {
+  border: 3px #8fc35f solid;
+}
 
 
+/********************table*************************/
+
+
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    
+  }
+
+
+  main {
+    background: url(../img/a.jpg);
+  }

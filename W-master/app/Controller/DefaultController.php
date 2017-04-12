@@ -22,6 +22,7 @@ class DefaultController extends Controller
 		$this->show('page/accueil');
 	}
 
+
 	//Methode associer a la l'ajout des article dans la base de donné
 	public function AjoutArticle()
 	{
@@ -155,7 +156,13 @@ CODEHTML;
 			}
 		}
 		$this->show('page/contact');
+
+	public function article()
+	{
+		$this->show('page/article');
+
 	}
 }
 
-	
+
+

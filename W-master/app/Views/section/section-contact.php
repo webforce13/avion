@@ -15,12 +15,12 @@
 
 		<br>
 
-		<label for="tel">téléphone:</label>
-		<input type="text" name="tel" id="tel" placeholder="Votre numero de téléphone">
+		<label for="tel">Téléphone:</label>
+		<input type="text" name="tel" id="tel" placeholder="Votre numéro de téléphone">
 
 		<br>
 
-		<label> for="Commentaire">Commentaire:</label>
+		<label>Commentaire:</label>
 		<br>
 		<textarea name="Commentaire" id="Commentaire" cols="30" rows="10" class="obligatoire">	
 		</textarea>
