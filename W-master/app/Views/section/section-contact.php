@@ -1,5 +1,5 @@
 
-<form action="" id="form-contact" method="POST">
+<form id="form-contact" method="POST">
 	
 		<label for="nom">Nom:</label>
 		<input type="text" name="nom" id="nom" placeholder="Votre Nom" class="obligatoire">
@@ -28,8 +28,10 @@
 
 
 		<br>
-
-		<input name="submit" class="submit" type="submit" value="Envoyer">
+		<input type="submit" name="operation" value="Envoyer">
+		<div class="message">
+			<?php if (isset($message)) echo $message; ?>
+		</div>
 </form>
 
 

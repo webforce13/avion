@@ -106,57 +106,60 @@ class DefaultController extends Controller
 
 	public function contact() 
 	{
-		if(isset($_POST['submit'])) 
+		$message="";
+		if(isset($_POST['operation'])) 
 		{
-			$nom = $_POST['nom'];
+			/*$nom = $_POST['nom'];
 			$email = $_POST['email'];
 			$telephone = $_POST['tel'];
-			$commentaire = $_POST['commentaire'];
+			$commentaire = $_POST['commentaire'];*/
 
 			$mail = new PHPMailer(); // création objet de type mail 
 			$mail->isSMTP(); // connexion directe au serveur SMTP
+			$mail->SMTPDebug = 2;
+			$mail->Debugoutput = 'html';
 			$mail->isHTML(true); // utilisation du format HTML
+			$mail->Charset = "utf-8"; //L'encodage du mail
 			$mail->Host='smtp.gmail.com'; // serveur SMTP pour envoyer
-			$mail->Port = 465; // le port obligatoire de google
+			$mail->Port = 25; // le port obligatoire de google
 			$mail->SMTPAuth = true; // on va fournir un login/password au serveur
 			$mail->SMTPSecure = 'ssl'; // cerfiticat SSL
-			$mail->Username='mabrouk.houssam@hotmail.fr';
-			$mail->Password='c.ronaldo';
-			$mail->setFrom= ('mabrouk.houssam@hotmail'); // l'expéditeur
-			$mail->AddAddress('mabrouk.houssam@hotmail'); // l'adresse mail du destinataire
-			$mail->Subject =""; // objet du mail 
-			$mail->Body = 
-
-<<<CODEHTML
-		<html>
-			<head>
-				<style> h1{color: pink;} </style>
-			</head>
-			<body>
-				<h1>message</h1>
-				<p>nom <strong> .$nom. </strong></p>
-				<br/>
-				<p>Email <strong> .$email. </strong></p>
-				<br/>
-				<p>Téléphone <strong> .$telephone. </strong></p>
-				<br/>				
-				<p>Commentaire <strong> .$commentaire. </strong></p>
-			</body>
-		</html>;
-CODEHTML;
+			$mail->Username='webforce13@gmail.com';
+			$mail->Password='azerty123456';
+			$mail->setFrom= ('webforce13@gmail.com'); // l'expéditeur
+			$mail->AddAddress('mabrouk.houssam@hotmail.fr'); // l'adresse mail du destinataire
+			$mail->Subject ="Email"; // objet du mail 
+			$mail->Body ='
+			<html>
+				<head>
+					<style> h1{color: pink;} </style>
+				</head>
+				<body>
+					<h1>message</h1>
+					<p>nom <strong> .$nom. </strong></p>
+					<br/>
+					<p>Email <strong> .$email. </strong></p>
+					<br/>
+					<p>Téléphone <strong> .$telephone. </strong></p>
+					<br/>				
+					<p>Commentaire <strong> .$commentaire. </strong></p>
+				</body>
+			</html>';
 
 			if(!$mail->send())
 			{
-				echo 'erreur envoi '.$mail->ErrorInfo;
+				$message = 'erreur envoi '.$mail->ErrorInfo;
 			}
 			else 
 			{
-				echo 'Eureka';
+				$message = 'Eureka';
 				// mise à jour table clients
 			}
 		}
 		$this->show('page/contact');
 	}
+
+	
 
 	public function article()
 	{
