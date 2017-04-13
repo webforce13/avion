@@ -10,6 +10,7 @@
 
 	
 	<!-- Boostrap-->
+	
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<link href="../public/assets/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,8 +18,7 @@
 
 
 	<!-- lien pour le CSS -->
- 	<link rel="stylesheet" href="../public/assets/css/style1.css">
- 	<link rel="stylesheet" href="../public/assets/css/styleArticle.css">
+ 	<link rel="stylesheet" href="../public/assets/css/article.css">
 
 	<!-- lien pour le jquery -->
 	<script
@@ -35,8 +35,8 @@
 <body>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+    <div>
+      <a>
         <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">
       </a>
       </div>
