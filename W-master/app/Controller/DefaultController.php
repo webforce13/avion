@@ -43,7 +43,7 @@ class DefaultController extends Controller
 			$type_file = $_FILES['image']['type'];
 
 			if(
-				(isset($_FILES['image'])) &&  
+				(isset($_FILES['image']) || isset($_FILES['image2']) || isset($_FILES['image3'])) &&   
 				(strstr($type_file, 'jpg') || strstr($type_file, 'jpeg') || strstr($type_file, 'bmp') || strstr($type_file, 'gif'))
 			  )
 			{
@@ -51,11 +51,30 @@ class DefaultController extends Controller
 				$dossier = '../public/assets/imageBdd/'; // le dossier ou mettre la photo
 				$fichier = $_FILES['image']['name']; // le nom du fichier d'origine 
 				$tmpName = $_FILES['image']['tmp_name'];
-				
 				if(move_uploaded_file($tmpName, $dossier.$fichier))
 				{
 					$message = 'votre image à était télecharger!';
 					$image = $dossier.$fichier;
+				}
+
+				// pour l'image2
+				$dossier2 = '../public/assets/imageBdd/'; // le dossier ou mettre la photo
+				$fichier2 = $_FILES['image2']['name']; // le nom du fichier d'origine 
+				$tmpName2 = $_FILES['image2']['tmp_name'];
+				if(move_uploaded_file($tmpName2, $dossier2.$fichier2))
+				{
+					$message = 'votre image à était télecharger!';
+					$image2 = $dossier2.$fichier2;
+				}
+
+				// pour l'image3
+				$dossier3 = '../public/assets/imageBdd/'; // le dossier ou mettre la photo
+				$fichier3 = $_FILES['image3']['name']; // le nom du fichier d'origine 
+				$tmpName3 = $_FILES['image3']['tmp_name'];			
+				if(move_uploaded_file($tmpName3, $dossier3.$fichier3))
+				{
+					$message = 'votre image à était télecharger!';
+					$image3 = $dossier3.$fichier3;
 				}
 			}
 			else
@@ -81,7 +100,10 @@ class DefaultController extends Controller
 					"EtatDeLaPiece" => $condition,
 					"Description" => $description,
 					"Quantite" => $quantite,
-					"Image" => $image],true);
+					"Image" => $image,
+					"Image2"=> $image2,
+					"Image3"=> $image3
+					],true);
 
 				// ca marche
 				if($result == false)

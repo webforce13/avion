@@ -18,6 +18,8 @@ foreach ($tabResult as $index => $tabinfo)
   $description = $tabinfo['Description'];
   $quantite    = $tabinfo['Quantite'];
   $image       = $tabinfo['Image'];
+  $image2      = $tabinfo['Image2'];
+  $image3      = $tabinfo['Image3'];
 
   /*$urlVBDD     = $tabinfo['url'];*/
 
@@ -36,8 +38,8 @@ echo
     <div class="carousel-container">    
       <ul class="carousel">
         <li><img src="$image">
-        <li><img src="$image">
-        <li><img src="$image">
+        <li><img src="$image2">
+        <li><img src="$image3">
       </ul>    
     </div>
   </div>

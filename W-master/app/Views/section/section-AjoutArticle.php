@@ -21,6 +21,12 @@
 	<label for="image">Inserée photo 1:</label>
 	<input name="image" id="image" type="file">
 	<br>	
+	<label for="image2">Inserée photo 2:</label>
+	<input name="image2" id="image2" type="file">
+	<br>	
+	<label for="image3">Inserée photo 3:</label>
+	<input name="image3" id="image3" type="file">
+	<br>	
 	<button type="submit" name="btnSub" >ENVOYER</button>
 
 	<input type="hidden" name="operation" value="ajouter">
