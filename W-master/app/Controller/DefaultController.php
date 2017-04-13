@@ -24,7 +24,7 @@ class DefaultController extends Controller
 
 
 	//Methode associer a la l'ajout des article dans la base de donné
-	public function AjoutArticle()
+	public function ajoutArticle()
 	{
 		// la variable ou afficher les messages
 		$message="";
@@ -101,7 +101,7 @@ class DefaultController extends Controller
 				$message = "Erreur infos incorrecte";
 			}
 		}
-		$this->show('page/AjoutArticle');
+		$this->show('page/ajoutArticle',['message' => $message]);
 	} 
 
 	public function contact() 
@@ -163,9 +163,16 @@ class DefaultController extends Controller
 
 	public function article()
 	{
-		$this->show('page/article');
-
+		
+		$this->show("page/article");
 	}
+
+	public function articleDetail($url)
+	{
+		$this->show("page/article-detail",["url" => $url]);	
+	}
+
+
 }
 
 

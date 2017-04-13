@@ -20,19 +20,11 @@
 	<br>
 	<label for="image">Inserée photo 1:</label>
 	<input name="image" id="image" type="file">
-	<br>
-	<br>
-	<label for="image">Inserée photo 2:</label>
-	<input name="image" id="image" type="file">
-	<br>
-	<br>
-	<label for="image">Inserée photo 3:</label>
-	<input name="image" id="image" type="file">
-	<br>
+	<br>	
 	<button type="submit" name="btnSub" >ENVOYER</button>
 
 	<input type="hidden" name="operation" value="ajouter">
-	<div class="message">
+	<div>
 		<?php if (isset($message)) echo $message; ?>
 	</div>
 </form>

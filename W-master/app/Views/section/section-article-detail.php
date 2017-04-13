@@ -15,29 +15,23 @@ foreach ($tabResult as $index => $tabinfo)
   $designation = $tabinfo['Designation'];
   $reference   = $tabinfo['Reference'];
   $condition   = $tabinfo['EtatDeLaPiece'];
-  $description = $tabinfo['Description'];
+  $description = $tabinfo['Desicription'];
   $quantite    = $tabinfo['Quantite'];
   $image       = $tabinfo['Image'];
 
-  /*$urlVBDD     = $tabinfo['url'];*/
+  $urlVBDD     = $tabinfo['url'];
+  $url;
+  $href= $this->url("page_article",["url" => $urlVBDD]);
 
-  /*$href= $this->url("page_article",["url" => $urlVBDD]);
 
-/*
-if($designation == "au lien associer a la designation")
-  {tu m'affiche les image qui a dedans }
-else{sinon tu m'affiche rien}
-
-*/
-}
 echo
 <<<CODEHTML
   <div class="wrapper">
     <div class="carousel-container">    
       <ul class="carousel">
         <li><img src="$image">
-        <li><img src="$image">
-        <li><img src="$image">
+        <li><img src="../public/assets/img/2.jpg">
+        <li><img src="../public/assets/img/parts.jpg">
       </ul>    
     </div>
   </div>
@@ -68,4 +62,5 @@ echo
 
 
 CODEHTML;
+}
 ?>  
