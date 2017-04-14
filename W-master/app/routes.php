@@ -10,5 +10,5 @@
 		['GET|POST', '/accueil', 'Default#accueil', 'page_accueil'],
 
 		/* La route pour l info */
-		['GET|POST', '/info', 'Default#info', 'page_info'],
+		['GET|POST', '/infoPage', 'Default#infoPage', 'page_infoPage'],
 	);

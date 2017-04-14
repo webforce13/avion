@@ -25,4 +25,9 @@ class DefaultController extends Controller
 		$this->show('page/acceuil');
 	}
 
+	public function infoPage()
+	{
+		$this->show('page/infoPage');
+	}
+
 }
