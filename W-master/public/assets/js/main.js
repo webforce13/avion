@@ -83,10 +83,14 @@ $('#form-contact').submit(function(){
     $('#success-message').show();
     // On demande à jQuery de faire disparaitre le formulaire dont l'identifiant est "form-contact"
     $('#form-contact').hide();
+
+  }
+  else
+  {
+     return false;
   }
 
   // Dans tous les cas on empêche le formulaire de partir
-  return false;
 })	
     
 

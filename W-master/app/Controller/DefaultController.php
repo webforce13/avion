@@ -4,7 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \Model\ArticleModel;
-use \PHPMailler;
+use \PHPMailer;
 
 class DefaultController extends Controller
 {
@@ -26,6 +26,10 @@ class DefaultController extends Controller
 	//Methode associer a la l'ajout des article dans la base de donné
 	public function ajoutArticle()
 	{
+		// ON VEUT PROTEGER L'ACCES A CETTE PAGE
+        $this->allowTo([ "admin", "super-admin" ]);
+
+        
 		// la variable ou afficher les messages
 		$message="";
 
@@ -131,25 +135,23 @@ class DefaultController extends Controller
 		$message="";
 		if(isset($_POST['operation'])) 
 		{
-			/*$nom = $_POST['nom'];
+			$nom = $_POST['nom'];
 			$email = $_POST['email'];
 			$telephone = $_POST['tel'];
-			$commentaire = $_POST['commentaire'];*/
+			$commentaire = $_POST['commentaire'];
 
 			$mail = new PHPMailer(); // création objet de type mail 
 			$mail->isSMTP(); // connexion directe au serveur SMTP
-			$mail->SMTPDebug = 2;
-			$mail->Debugoutput = 'html';
+			//$mail->SMTPDebug = 2;
 			$mail->isHTML(true); // utilisation du format HTML
-			$mail->Charset = "utf-8"; //L'encodage du mail
 			$mail->Host='smtp.gmail.com'; // serveur SMTP pour envoyer
-			$mail->Port = 25; // le port obligatoire de google
+			$mail->Port = 465; // le port obligatoire de google
 			$mail->SMTPAuth = true; // on va fournir un login/password au serveur
 			$mail->SMTPSecure = 'ssl'; // cerfiticat SSL
-			$mail->Username='webforce13@gmail.com';
-			$mail->Password='azerty123456';
-			$mail->setFrom= ('webforce13@gmail.com'); // l'expéditeur
-			$mail->AddAddress('mabrouk.houssam@hotmail.fr'); // l'adresse mail du destinataire
+			$mail->Username='anthoine.demares@gmail.com';
+			$mail->Password='johndo113';
+			$mail->setFrom('anthoine.demares@gmail.com'); // l'expéditeur
+			$mail->AddAddress('webforce13@gmail.com'); // l'adresse mail du destinataire
 			$mail->Subject ="Email"; // objet du mail 
 			$mail->Body ='
 			<html>
@@ -158,13 +160,13 @@ class DefaultController extends Controller
 				</head>
 				<body>
 					<h1>message</h1>
-					<p>nom <strong> .$nom. </strong></p>
+					<p>nom <strong>' .$nom. '</strong></p>
 					<br/>
-					<p>Email <strong> .$email. </strong></p>
+					<p>Email <strong>' .$email. '</strong></p>
 					<br/>
-					<p>Téléphone <strong> .$telephone. </strong></p>
+					<p>Téléphone <strong>' .$telephone. '</strong></p>
 					<br/>				
-					<p>Commentaire <strong> .$commentaire. </strong></p>
+					<p>Commentaire <strong>' .$commentaire. '</strong></p>
 				</body>
 			</html>';
 
@@ -178,7 +180,7 @@ class DefaultController extends Controller
 				// mise à jour table clients
 			}
 		}
-		$this->show('page/contact');
+		$this->show('page/contact',["message"=>$message]);
 	}
 
 	
@@ -192,6 +194,12 @@ class DefaultController extends Controller
 	public function articleDetail($url)
 	{
 		$this->show("page/article-detail",["url" => $url]);	
+	}
+
+	public function connexion()
+	{
+		$message="";
+		$this->show("page/connexion",['message' => $message]);
 	}
 
 

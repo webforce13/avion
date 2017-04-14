@@ -21,25 +21,54 @@ foreach ($tabResult as $index => $tabinfo)
   $image2      = $tabinfo['Image2'];
   $image3      = $tabinfo['Image3'];
 
-  /*$urlVBDD     = $tabinfo['url'];*/
+  /*
+  $urlVBDD     = $tabinfo['url'];
 
-  /*$href= $this->url("page_article",["url" => $urlVBDD]);
+  $href= $this->url("page_article",["url" => $urlVBDD]);
+  */
 
-/*
-if($designation == "au lien associer a la designation")
-  {tu m'affiche les image qui a dedans }
-else{sinon tu m'affiche rien}
-
-*/
 }
+
+// la gestion des photos vide ou remplis pour l'image variable $PHPimage 
+if(isset($image))
+{
+    $PHPimage = '<img src="' . $image .'"' ;
+}
+else
+{
+    $PHPimage = 'no image';
+}
+
+// la gestion des photos vide ou remplis pour l'image variable $PHPimage2 
+if(isset($image2))
+{
+    $PHPimage2 = '<img src="' . $image2 .'"' ;
+}
+else
+{
+    $PHPimage2 = 'no image';
+}
+
+// la gestion des photos vide ou remplis pour l'image variable $PHPimage3 
+if(isset($image3))
+{
+    $PHPimage3 = '<img src="' . $image3 .'"' ;
+}
+else
+{
+    $PHPimage3 = 'no image';
+}
+
+
+           
 echo
 <<<CODEHTML
   <div class="wrapper">
     <div class="carousel-container">    
       <ul class="carousel">
-        <li><img src="$image">
-        <li><img src="$image2">
-        <li><img src="$image3">
+        <li>$PHPimage</li>
+        <li>$PHPimage2</li>
+        <li>$PHPimage3</li>
       </ul>    
     </div>
   </div>

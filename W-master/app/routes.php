@@ -18,4 +18,10 @@
 		
 		/* La route pour article */
 		['GET|POST', '/ajoutArticle', 'Default#ajoutArticle', 'page_ajoutArticle'],
+		
+		/* La route pour ce connecter */
+		['GET|POST', '/connexion', 'Default#connexion', 'page_connexion'],
+
+		/* La route pour modifier mot de passe */
+		['GET|POST', '/modif', 'Default#modif', 'page_modif'],
 	);

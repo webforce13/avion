@@ -22,7 +22,7 @@
 
 		<label>Commentaire:</label>
 		<br>
-		<textarea name="Commentaire" id="Commentaire" cols="30" rows="10" class="obligatoire">	
+		<textarea name="commentaire" id="Commentaire" cols="30" rows="10" class="obligatoire">	
 		</textarea>
 		<span class="error hidden" id="erreur">Veuillez entrer votre commentaire !</span>
 
