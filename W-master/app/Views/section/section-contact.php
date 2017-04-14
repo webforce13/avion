@@ -1,5 +1,5 @@
 
-<form id="form-contact" method="POST">
+<form id="form-contact" method="POST" action="DefaultController.php">
 	
 		<label for="nom">Nom:</label>
 		<input type="text" name="nom" id="nom" placeholder="Votre Nom" class="obligatoire">

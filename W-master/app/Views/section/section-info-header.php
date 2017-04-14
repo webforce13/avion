@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../public/assets/css/info.css" />
+        <link rel="stylesheet" href="../public/assets/css/infoPage.css" />
         <title>Zozor - Carnets de voyage</title>
     </head>
     
@@ -11,20 +11,18 @@
             <header>
                 <div id="titre_principal">
                     <div id="logo">
-                        <img src="images/zozor_logo.png" alt="Logo de Zozor" />
-                        <h1>Pieces d avions</h1>    
+                        <img src="../public/assets/images/logoAER2.png" alt="Logo du site"  />
                     </div>
-                    <h2>Bienvenue</h2>
+                    
+                    
+                   
+                    <h1 id="titre">AERO & ELECTRONICS RECYCLING</h1>
+                    
+                    
+                    
                 </div>
                 
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">CV</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+                
+          
             
-            <div id="banniere_image">
+            

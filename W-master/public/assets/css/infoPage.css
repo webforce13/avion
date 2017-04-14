@@ -1,0 +1,490 @@
+/* Définition des polices personnalisées */
+
+//@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//  @font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Chapaza';
+    src: url('font/Chapaza.ttf');
+    src: url('font/ChapazaItalic.ttf');
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+  
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: black;
+  margin-top: 20px;
+  background: url('../images/vol-1.jpg') no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+
+  
+}
+
+#bloc_page
+{
+  width: 1200px;
+  margin: auto;
+  opacity: 1;
+  //box-shadow: 0px 8px 8px #1c1a19;
+}
+
+
+section h1, footer h1, nav a
+{
+    
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    //background: url('../images/fondavion.jpg') no-repeat ;
+    display: flex;
+    justify-content: space-between;
+    //align-items: flex-end;
+    height: 100px;
+    //background-color: #e8e8e8;
+
+}
+
+#titre_principal
+{
+    display: flex;
+    
+}
+
+#logo img
+{
+    display: flex;
+    align-items: baseline;
+    width: 140px;
+    height: 140px;
+}
+
+
+
+
+#titre
+{
+    font-family: 'Chapaza';
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0 0 0 300px;
+    text-align: justify;
+    color: #e8e8e8;
+    display: flex;
+}
+
+
+
+
+/* Navigation */
+
+nav{
+  margin-top: 50px;
+
+}
+nav ul
+{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e8e8e8;
+    border-radius: 8px ;
+    font-family: 'Chapaza';
+}
+
+nav li
+{
+    float: left;
+
+}
+
+nav li a:hover{
+  background-color: #0ec038;
+}
+nav a
+{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 3px ;
+    
+}
+
+nav a:hover
+{
+    color: white;
+
+    
+}
+
+
+#contact{
+  float: right;
+}
+
+/*nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  height: auto;
+  min-width: 40px;
+  width: 30px;
+  background-image: url('../images/aviondeface.jpg') ;
+  font-size: 15px;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+  box-shadow: 0px 4px 4px #1c1a19;
+}
+
+nav:hover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 180px;
+  background-color:none;
+}
+
+nav a {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity:0;
+  margin-left: 1em;
+}
+
+nav:hover a {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity:1;
+}
+
+li {
+  display: block;
+  padding:0.2em;
+  height:32px;
+}
+*/
+
+/* Bannière */
+
+/*#banniere_image
+{
+    margin-top: 15px;
+    height: 400px;
+    border-radius: 5px;
+    //background:  url('../images/helice.jpg') no-repeat left  ;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color:  #e5e5e5;
+    color: black;
+    font-size: 0.8em;
+    
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('../public/assets/images/helice.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+*/
+
+/* Corps */
+
+#section1
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+#titre2{
+  padding-left: 20px;
+}
+#article1
+{
+    margin-right: 20px;
+    flex: 3;
+    background-color: #e8e8e8;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 8px ;
+}
+
+#partie1
+{
+  padding: 20px 20px 20px 20px;
+}
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #d1e1f9;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 0.9em;
+}
+
+
+#section2{
+  width: 100%;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  
+}
+
+
+#article2{
+  box-shadow: 0px 2px 5px #1c1a19;
+  padding: 20px 20px 20px 20px;
+  background-color: #e8e8e8;
+}
+
+
+
+
+/* presentation images */
+#slider figure {
+  position: relative; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+}
+
+#slider{
+  border: 1px solid grey;
+  border-radius: 5px 5px 5px 5px;
+  //box-shadow: -2px -5px -5px #1c1a19;
+  width: 100%; 
+  height: 350px;
+  max-width: 1000px; 
+  overflow: hidden;
+  
+}
+
+
+#slider figure img { 
+  width: 20%; 
+  height: auto; 
+  float: left; 
+  
+}
+
+
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 15s slidy infinite;
+}
+
+
+
+/*  *****  */
+
+
+
+
+
+
+
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor
+{
+    text-align: center;
+}
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+
+
+
+/*aside img
+{
+    margin-right: 5px;
+}*/
+
+/* Bandeau */
+
+#bandeau{
+  width: 100%;
+  height: 8em;
+  background-color: #b4bac4;
+}
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background-color: #a6bbdd;
+    padding-top: 25px;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border : 2px solid white;
+    text-align: center;
+
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#local
+{
+    width: 32%;
+}
+
+#mes_photos
+{
+    width: 30%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
