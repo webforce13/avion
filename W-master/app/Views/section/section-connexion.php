@@ -18,6 +18,7 @@
                 <a href="#" class="pull-right need-help">Besoin d'aide?</a><span class="clearfix"></span>
             
                 <a href="#" class="text-center new-account">Créer un compte </a>
+                <span><a href="<?php echo $this->url('page_modif')?>">Modifier le Mot de passe </a></span>
                 </form>
             </div>
         </div>
