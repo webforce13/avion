@@ -1,4 +1,7 @@
-<form action="" class="form-horizontal"  method="POST" enctype="multipart/form-data">
+<h1>POSTER UN ARTICLE</h1>
+
+
+<form action="" class="form-horizontal"  method="POST" enctype="multipart/form-data" style="margin-bottom: 0px;">
 
 
 <div class="form-group">
@@ -15,20 +18,24 @@
 
 	<br>
 
-<div class="form-group">	
-	<label for="condition" class="col-sm-2 control-label">Etat de la piece</label>
-	<select name="condition" value="">
-		<option value="Bon" selected id="Bon">BON</option>
-		<option value="Moyen" id="Moyen">Moyen</option>
-		<option value="Mauvais" id="Mauvais">Mauvais</option>
-	</select>
+<div>
+	<label for="condition" class="col-sm-2 control-label">Etat de l'article</label>	
+	<label class="radio-inline">
+  	<input type="radio" name="condition" id="Bon" value="Bon">BON
+	</label>
+	<label class="radio-inline">
+ 	 <input type="radio" name="condition" id="Moyen" value="Moyen">&nbsp;MOYEN
+	</label>
+	<label class="radio-inline">
+  	<input type="radio" name="condition" id="Mauvais" value="Mauvais">&nbsp; MAUVAIS
+	</label>
 </div>
 
 	<br>
 
 <div class="form-group">
-	<label for="Description" class="col-sm-2 control-label">La Description de la piece</label>
-	<textarea name="description" id="Description" cols="30" rows="10"></textarea>	
+	<label for="description" class="col-sm-2 control-label">La Description de la piece</label>
+	<textarea name="description" id="description" cols="30" rows="10"></textarea>	
 </div>
 
 	<br>
@@ -44,20 +51,19 @@
 	<label for="image" class="col-sm-2 control-label">Inserée photo 1:</label>
 	<input name="image" id="image" type="file">
 </div>
-
+<div class="form-group">	
+	<label for="image" class="col-sm-2 control-label">Inserée photo 2:</label>
+	<input name="image" id="image" type="file">
+</div>
+<div class="form-group">	
+	<label for="image" class="col-sm-2 control-label">Inserée photo 3:</label>
+	<input name="image" id="image" type="file">
+</div>
 	<br>	
 
-	<label for="image2">Inserée photo 2:</label>
-	<input name="image2" id="image2" type="file">
-	<br>	
-	<label for="image3">Inserée photo 3:</label>
-	<input name="image3" id="image3" type="file">
-	<br>	
-	<button type="submit" name="btnSub" >ENVOYER</button>
-
-
-	<button type="submit" name="btn btn-default" >ENVOYER</button>
-	<input type="hidden" name="operation" value="ajouter">
+	
+	<button type="submit" name="btn" class="btn">ENVOYER</button>
+	<input type="hidden"  name="operation" value="ajouter">
 	<div>
 		<?php if (isset($message)) echo $message; ?>
 	</div>

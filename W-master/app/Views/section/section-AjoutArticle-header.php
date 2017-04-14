@@ -27,11 +27,9 @@
 
 <body>
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">
-      </a>
+  
+    <div class="navbar-header">      
+        <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">      
       </div>
   </div>
 </nav>

@@ -1,7 +1,7 @@
 
 <h1 id="titrearticle">Annonces de pièces détachées</h1>
 
-<section>
+
 <?php
 // LA METHODE findAll EST DEFINIE DANS LA CLASSE \W\Model\Model
 // LA METHODE findAll RENVOIE UN TABLEAU DE TABLEAU 
@@ -76,26 +76,41 @@ echo
 
 
 
-
-  <table class="table table-striped">
+<div class="art">
+  <table>
      <tr>
-         <td>Référence : </td>
-         <td>$reference</td>       
+         <td>Reference : </td>
+         <td><input type="text" name="Reference" value="$reference"/>
+         </td>       
      </tr>
+
      <tr>
-         <td>Désignation : </td>
-         <td>$designation</td>
-      </tr>
-      <tr>
-         <td>Stock : </td>
-         <td>$quantite</td>
-      </tr>
-      <tr>
+         <td>Designation : </td>
+         <td><input type="text" name="Designation" value="$designation"/>
+         </td>       
+     </tr>
+
+     <tr>
+         <td>EtatDeLaPiece : </td>
+         <td><input type="text" name="EtatDeLaPiece" value="$condition"/>
+         </td>       
+     </tr>
+
+     <tr>
+         <td>Quantite : </td>
+         <td><input type="text" name="Quantite" value="$quantite"/>
+         </td>       
+     </tr>
+     
+     <tr>
          <td>Description : </td>
-         <td>$description</td>
-      </tr>
+         <td><input type="text" name="Description" value="$description"/>
+         </td>       
+     </tr>
+   
   </table>
-</section>
+  </div>
+
 
 
 CODEHTML;
