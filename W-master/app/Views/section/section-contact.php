@@ -1,5 +1,5 @@
 
-<form action="" id="form-contact" method="POST">
+<form id="form-contact" method="POST" action="DefaultController.php">
 	
 		<label for="nom">Nom:</label>
 		<input type="text" name="nom" id="nom" placeholder="Votre Nom" class="obligatoire">
@@ -15,12 +15,12 @@
 
 		<br>
 
-		<label for="tel">téléphone:</label>
-		<input type="text" name="tel" id="tel" placeholder="Votre numero de téléphone">
+		<label for="tel">Téléphone:</label>
+		<input type="text" name="tel" id="tel" placeholder="Votre numéro de téléphone">
 
 		<br>
 
-		<lable for="Commentaire">Commentaire:</lable>
+		<label>Commentaire:</label>
 		<br>
 		<textarea name="Commentaire" id="Commentaire" cols="30" rows="10" class="obligatoire">	
 		</textarea>
@@ -28,8 +28,10 @@
 
 
 		<br>
-
-		<input name="submit" class="submit" type="submit" value="Envoyer">
+		<input type="submit" name="operation" value="Envoyer">
+		<div class="message">
+			<?php if (isset($message)) echo $message; ?>
+		</div>
 </form>
 
 

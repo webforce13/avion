@@ -24,7 +24,8 @@
   
   <script src="../public/assets/js/main.js"></script>
   <script src="../public/assets/js/index.js"></script>
+  <script src="../public/assets/js/article.js"></script>
+
 
   </body>
   </html>
-
