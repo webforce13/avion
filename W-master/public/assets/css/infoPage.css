@@ -39,7 +39,7 @@ body
   font-family: 'Trebuchet MS', Arial, sans-serif;
   color: black;
   margin-top: 20px;
-  background: url('../images/vol-1.jpg') no-repeat;
+  background: url('../image/a.jpg') no-repeat;
   background-position: top;
   background-attachment: fixed;
 
@@ -70,9 +70,8 @@ header
     display: flex;
     justify-content: space-between;
     //align-items: flex-end;
-    height: 100px;
-    //background-color: #e8e8e8;
-
+    height: 150px;
+    padding-top: 30px;
 }
 
 #titre_principal
@@ -118,7 +117,7 @@ nav ul
     margin-top: 20px;
     padding: 0;
     overflow: hidden;
-    background-color: #e8e8e8;
+    background-color: #f2f3f4;
     border-radius: 8px ;
     font-family: 'Chapaza';
 }
@@ -130,7 +129,7 @@ nav li
 }
 
 nav li a:hover{
-  background-color: #0ec038;
+  background-color: #e8e8e8;
 }
 nav a
 {
@@ -276,7 +275,7 @@ article, aside
 {
     margin-right: 20px;
     flex: 3;
-    background-color: #e8e8e8;
+    background-color: #f2f2f2;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 8px ;
 }
@@ -300,7 +299,7 @@ aside
 {
     flex: 1.2;
     position: relative;
-    background-color: #d1e1f9;
+    background-color: #f2f3f4;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 10px;
@@ -320,7 +319,7 @@ aside
 #article2{
   box-shadow: 0px 2px 5px #1c1a19;
   padding: 20px 20px 20px 20px;
-  background-color: #e8e8e8;
+  background-color: #f2f2f2;
 }
 
 
