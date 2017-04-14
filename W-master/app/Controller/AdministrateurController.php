@@ -40,7 +40,7 @@ class AdministrateurController extends Controller
 					$objetUserModel = new \W\Mdel\UsersModel;
 
 					//on recupere la ligne sur l'utilisateur
-					$tabUser = $objetUserModel->find($idUser)
+					$tabUser = $objetUserModel->find($idUser);
 					// la fonction "logUserIn" va memoriser les informatins de l'utilisateur dans une session
 					$tabUser = $objetUserModel->logUserIn($tabUser);
 				}
@@ -60,6 +60,31 @@ class AdministrateurController extends Controller
 	/*************************************************************************/
 	public function modif()
 	{
+		$message="";
+
+		if(isset($_POST['submit']))
+		{
+			// recuperation des donnes du formulaire
+			$ActuelleMdp = trim($_POST['mdpA']);
+			$NouveauMdp = trim($_POST['mdpN']);
+			$VerifMdp  = trim($_POST['mdpV']);
+			
+			// Récuperaton du login actuelle avec la fonction getUser() et le parametre "login"
+			$UserActuelle = $this->getUser();
+			$login = $UserActuelle["login"];
+
+
+			if(is_string($ActuelleMdp) && mb_strlen($ActuelleMdp) > 4 )
+			{
+				// Vérification du des login 'identifiant' et 'le mot de passe actuelle'
+				$objetAuthentificationModel = new \W\Security\AuthentificationModel;
+				$mdpActuelle->isValidLoginInfo($login, $ActuelleMdp);
+			}
+				
+
+
+
+		}
 		$this->show("page/modif",["message"=>$message]);
 	}
 
