@@ -23,5 +23,5 @@
 		['GET|POST', '/connexion', 'Default#connexion', 'page_connexion'],
 
 		/* La route pour modifier mot de passe */
-		['GET|POST', '/modif', 'Default#modif', 'page_modif'],
+		['GET|POST', '/modif', 'Administrateur#modif', 'page_modif'],
 	);

@@ -27,7 +27,7 @@ class DefaultController extends Controller
 	public function ajoutArticle()
 	{
 		// ON VEUT PROTEGER L'ACCES A CETTE PAGE
-        $this->allowTo([ "admin", "super-admin" ]);
+        //$this->allowTo([ "admin", "super-admin" ]);
 
         
 		// la variable ou afficher les messages

@@ -6,7 +6,7 @@
         <label for="password">Mot De Passe</label>
         <input id="password" name="password" type="password" required>
 
-        <span><a href="">modifier le mot de passe</a></span>
+        <span><a href="<?php echo $this->url("page_modif") ?>">modifier le mot de passe</a></span>
 
         <button type="submit">CONNEXION</button>
 
