@@ -22,6 +22,11 @@ class DefaultController extends Controller
 		$this->show('page/accueil');
 	}
 
+	public function annonce()
+	{
+		$this->show("page/annonce");
+	}
+
 
 	//Methode associer a la l'ajout des article dans la base de donné
 	public function ajoutArticle()
@@ -206,6 +211,8 @@ class DefaultController extends Controller
 	{
 		$this->show("page/infoPage");
 	}
+
+	
 
 
 }

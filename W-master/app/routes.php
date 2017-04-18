@@ -24,4 +24,8 @@
 
 		/* La route pour modifier mot de passe */
 		['GET|POST', '/modif', 'Administrateur#modif', 'page_modif'],
-	);
+
+
+		/* La route pour l accueil */
+		['GET|POST', '/annonce', 'Default#annonce', 'page_annonce'],
+);
