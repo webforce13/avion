@@ -10,7 +10,7 @@
         <section class="footer-section">
         <span>Contactez Nous :</span>
         <br>
-        <span><a href="" title="Email"><i class="fa fa-envelope-o">  -  Formulaire de Contact</i></a></span>
+        <span><a href="contact" title="Email"><i class="fa fa-envelope-o">  -  Formulaire de Contact</i></a></span>
         <br>
         <span><a href="" title="Telephone"><i class="fa fa-phone">  -  06.12.34.56.78</i></a></span>
         </section>

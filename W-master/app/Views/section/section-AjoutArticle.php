@@ -53,11 +53,11 @@
 </div>
 <div class="form-group">	
 	<label for="image" class="col-sm-2 control-label">Inserée photo 2:</label>
-	<input name="image" id="image" type="file">
+	<input name="image2" id="image" type="file">
 </div>
 <div class="form-group">	
 	<label for="image" class="col-sm-2 control-label">Inserée photo 3:</label>
-	<input name="image" id="image" type="file">
+	<input name="image3" id="image" type="file">
 </div>
 	<br>	
 
