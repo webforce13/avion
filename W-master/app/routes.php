@@ -9,6 +9,10 @@
 		/* La route pour l accueil */
 		['GET|POST', '/accueil', 'Default#accueil', 'page_accueil'],
 
+		/* La route pour l accueil */
+		['GET|POST', '/annonce', 'Default#annonce', 'page_annonce'],
+
+
 		/* La route pour l info */
 		['GET|POST', '/info', 'Default#info', 'page_info'],
 

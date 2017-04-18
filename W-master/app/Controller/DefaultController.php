@@ -23,6 +23,11 @@ class DefaultController extends Controller
 	}
 
 
+	public function annonce()
+	{
+		$this->show('page/annonce');
+	}
+
 	//Methode associer a la l'ajout des article dans la base de donné
 	public function ajoutArticle()
 	{
