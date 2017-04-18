@@ -1,5 +1,13 @@
 <main>
 
+<form class="navbar-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Votre recherche">
+        </div>
+        <button type="submit" class="btn btn-success">Rechercher</button>
+</form>
+
+
 <section class="articleList">
 
 <article class="filtreList">
@@ -10,6 +18,9 @@
         </select>
     </div>                
 </article>
+
+
+
 
 <!--********************ANNONCE 1 *********************-->
 
@@ -38,7 +49,7 @@
     </section>
     </a>
     </li>
-</section>
+
 
 <!--********************ANNONCE 2 *********************-->
 
@@ -67,7 +78,7 @@
     </section>
     </a>
     </li>
-</section>
+
 
 <!--********************ANNONCE 3 *********************-->
 
@@ -96,7 +107,7 @@
     </section>
     </a>
     </li>
-</section>
+
 
 <!--********************ANNONCE 4 *********************-->
 
@@ -126,7 +137,7 @@
     </section>
     </a>
     </li>
-</section>
+
 
 <!--********************ANNONCE 5 *********************-->
 
