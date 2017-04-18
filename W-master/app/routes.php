@@ -24,4 +24,7 @@
 
 		/* La route pour modifier mot de passe */
 		['GET|POST', '/modif', 'Administrateur#modif', 'page_modif'],
+
+		/* La route pour mot de passe oublier */
+		['GET|POST', '/mdpo', 'Default#mdpo', 'page_mdpo'],
 	);

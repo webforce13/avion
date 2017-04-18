@@ -207,6 +207,70 @@ class DefaultController extends Controller
 		$this->show("page/infoPage");
 	}
 
+	public function mdpo()
+	{
+		$message ="";
+		/* Récuperation du formulaire du modif mot de passe */
+		if (isset($_['btnEmail'])) 
+		{
+			$email = trim($_REQUEST["email"]);
+
+			if(filter_var($email,FILTER_VALIDATE_EMAIL))
+			{
+				/*faire l'ogjets de la Class UserModel pour pouvoir utiliser 
+				la fonction emailExists*/
+				$objetEmail = new \Model\UserModel;
+				if($Verif = $objetEmail->emailExists($email))
+				{
+					/*Récuperatin du mot de passe dans la basse de donnée*/
+					$objetEmail = new \Model\MonModel;
+					$MotDePasse = $objetEmail->findBy('Nom','Email');
+					// envoie du mail
+					$mail = new PHPMailer(); // création objet de type mail 
+					$mail->isSMTP(); // connexion directe au serveur SMTP
+					//$mail->SMTPDebug = 2;
+					$mail->isHTML(true); // utilisation du format HTML
+					$mail->Host='smtp.gmail.com'; // serveur SMTP pour envoyer
+					$mail->Port = 465; // le port obligatoire de google
+					$mail->SMTPAuth = true; // on va fournir un login/password au serveur
+					$mail->SMTPSecure = 'ssl'; // cerfiticat SSL
+					$mail->Username='anthoine.demares@gmail.com';
+					$mail->Password='johndo113';
+					$mail->setFrom('anthoine.demares@gmail.com'); // l'expéditeur
+					$mail->AddAddress('webforce13@gmail.com'); // l'adresse mail du destinataire
+					$mail->Subject ="Email"; // objet du mail 
+					$mail->Body ='
+					<html>
+						<head>
+							<style> h1{color: pink;} </style>
+						</head>
+						<body>
+							<h1>message</h1>
+							<p>Votre Mot de passe:</p>
+							<p><strong>'.$MotDePasse.'</strong></p>
+						</body>
+					</html>';
+
+					if(!$mail->send())
+					{
+						$message = 'erreur envoi '.$mail->ErrorInfo;
+					}
+					else 
+					{
+						$message = 'Eureka';
+						// mise à jour table clients
+					}
+
+					
+				}else{$message = 'erreur';}
+			
+			}else{$message="votre Email est incorrecte";}
+	
+		}else{$message = 'votre formulaire est incorrecte';}
+		/* l'affichage de la page */
+		$this->show("page/mdpo",['message' => $message]);
+	}
+
 
 }
 
