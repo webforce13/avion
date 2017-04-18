@@ -6,14 +6,21 @@
                 <nav>
                     <ul>
                         <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Blog</a></li>
                         <li><a href="#">Pieces</a></li>
                         <li id="contact"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
 
+            <!-- bandeau défilant (avec css) -->
+            <b><font color="red"><marquee direction="left" behavior="scroll" scrollamount="5" width="100%" scrolldelay="50" style="font-family: Arial, Verdana; color: red; font-size: 20; background-color: #f2f2f2; border-radius: 15px 15px 15px 15px ">
 
+            Prix des métaux au kilo en euros (avril 2017) :  Or 37950 € / Platine  28775 € / Argent 552 € / Palladium 24280 € / 
+
+            </marquee></b></font>
+
+
+           
             <section id="section1">
                 <article id="article1">
                     <h2 id="titre2">Bienvenue chez AERO & ELECTRONICS RECYCLING</h2>

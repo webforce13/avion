@@ -1,5 +1,5 @@
 body {
-  width: 1200px;
+  width: 70%;
   margin: auto;
   font-family: 'Suez One', serif; 
 background: url('../image/a.jpg');
@@ -22,6 +22,54 @@ background: url('../image/a.jpg');
 #logotop {
   width: 150px;
   padding-left: 45%;    
+}
+
+
+/* Navigation */
+
+
+
+nav ul
+{
+    list-style-type: none;
+    //margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f3f4;
+    border-radius: 8px ;
+    font-family: 'Chapaza';
+}
+
+nav li
+{
+    float: left;
+
+}
+
+nav li a:hover{
+  background-color: #e8e8e8;
+}
+nav a
+{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 3px ;
+    
+}
+
+nav a:hover
+{
+    color: white;
+
+    
+}
+
+
+#contact{
+  float: right;
 }
 
 

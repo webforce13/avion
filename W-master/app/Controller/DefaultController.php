@@ -201,7 +201,11 @@ class DefaultController extends Controller
 		$message="";
 		$this->show("page/connexion",['message' => $message]);
 	}
-
+ 	
+ 	public function info()
+ 	{
+ 		$this->show("page/infoPage");
+ 	}
 
 }
 

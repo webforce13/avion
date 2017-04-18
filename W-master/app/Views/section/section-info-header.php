@@ -16,7 +16,7 @@
                     
                     
                    
-                    <h1 id="titre">AERO & ELECTRONICS RECYCLING</h1>
+                    <h1 id="titre"><strong>AERO & <br/>ELECTRONICS RECYCLING</strong></h1>
                     
                     
                     
