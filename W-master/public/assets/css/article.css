@@ -1,8 +1,13 @@
 body {
-  max-width: 100%;
+  max-width: 70%;
   height: 70%;
   background-size: cover;
-  font-family: 'Suez One', serif;   
+  font-family: 'Suez One', serif; 
+  margin: auto;  
+  background: url(../img/a.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -12,21 +17,76 @@ body {
 .navbar {  
   background-image: url(../img/z.jpg);
   background-size: cover;
-  width: 100%;
-  //height: 100%; 
   border: 1px solid white;
-  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
+  height: 100%; 
 }
 
 #logotop {  
   width: 150px;     
 }
 
+/* Navigation */
+
+nav{
+  margin-top: 50px;
+
+}
+nav ul
+{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f3f4;
+    border-radius: 8px ;
+    font-family: 'Chapaza';
+}
+
+nav li
+{
+    float: left;
+
+}
+
+nav li a:hover{
+  background-color: #e8e8e8;
+}
+nav a
+{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    //border: 1px solid white;
+    border-radius: 3px ;
+    
+}
+
+nav a:hover
+{
+    color: white;
+
+    
+}
+
+
+#contact{
+  float: right;
+}
 
 
 /**************************** MAIN ****************************/
 
+/* url pour la police */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
+
+/* la police de la page contacts*/
+*{
+  font-family: Raleway, cursive;
+} 
 
 
 #titrearticle{
@@ -111,14 +171,8 @@ body {
   border: 5px black solid;
 }
 
+/********** table ***********/
 
-                                /*table*/
-
-main {
-  background: url(../img/a.jpg);
-  background-size: cover;
-  background-position: center;
-}
 
 
 .art {
@@ -136,7 +190,7 @@ table{
 tbody {
   box-shadow: 0px 0px 39px 10px rgba(0,0,0,1);
 }
-}
+
 
 
 

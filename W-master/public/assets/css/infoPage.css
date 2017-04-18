@@ -1,59 +1,28 @@
-/* Définition des polices personnalisées */
-
-@font-face
-{
-    font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('polices/ballpark.woff') format('woff'),
-         url('polices/ballpark.ttf') format('truetype'),
-         url('polices/ballpark.svg#BallparkWeiner') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
- @font-face
-{
-    font-family: 'Dayrom';
-    src: url('polices/dayrom.eot');
-    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'Chapaza';
-    src: url('font/Chapaza.ttf');
-    src: url('font/ChapazaItalic.ttf');
-}
 
 /* Eléments principaux de la page */
 
 body
 {
-  
-  font-family: 'Trebuchet MS', Arial, sans-serif;
+
   color: black;
   margin-top: 20px;
   background: url('../image/a.jpg') no-repeat;
   background-position: top;
   background-attachment: fixed;
-
-  
+  background-size: cover;
 }
 
 #bloc_page
 {
   width: 70%;
   margin: auto;
-  opacity: 1;
-  //box-shadow: 0px 8px 8px #1c1a19;
 }
+/* url pour la police */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
+*{
+  font-family: Raleway, cursive;
+}
 
 section h1, footer h1, nav a
 {
@@ -66,40 +35,21 @@ section h1, footer h1, nav a
 
 header
 {
-    //background: url('../images/fondavion.jpg') no-repeat ;
-    display: flex;
-    justify-content: space-between;
-    //align-items: flex-end;
-    height: 150px;
-    padding-top: 30px;
-}
-
-#titre_principal
-{
-    display: flex;
+    
+    height: 100%;
+    background-image: url(../img/z.jpg);
+    background-size: cover;
+    border: 1px solid white;
+    text-align: center;
     
 }
 
+
 #logo img
 {
-    display: flex;
-    align-items: baseline;
-    width: 140px;
-    height: 140px;
-}
-
-
-
-
-#titre
-{
-    font-family: 'Chapaza';
-    font-size: 60px;
-    font-weight: normal;
-    margin: 0 0 0 200px;
-    text-align: justify;
-    color: black;
-    display: flex;
+    width: 150px;
+    
+    text-align: center;
 }
 
 
@@ -108,18 +58,19 @@ header
 /* Navigation */
 
 nav{
-  margin-top: 50px;
+  
+  width: 100%;
 
 }
 nav ul
 {
     list-style-type: none;
-    margin-top: 20px;
+    //margin-top: 20px;
     padding: 0;
     overflow: hidden;
     background-color: #f2f3f4;
     border-radius: 8px ;
-    font-family: 'Chapaza';
+    //font-family: 'Chapaza';
 }
 
 nav li
@@ -137,7 +88,7 @@ nav a
     color: black;
     padding: 14px 16px;
     text-decoration: none;
-    border: 2px solid white;
+    
     border-radius: 3px ;
     
 }
