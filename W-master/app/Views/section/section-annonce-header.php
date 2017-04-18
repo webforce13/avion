@@ -14,7 +14,7 @@
   <link href="../public/assets/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- lien pour le CSS -->
-  <link rel="stylesheet" href="../public/assets/css/ajoutArticle.css">
+  <link rel="stylesheet" href="../public/assets/css/annonce.css">
 
   <!-- lien pour le jquery -->
   <script

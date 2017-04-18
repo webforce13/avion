@@ -19,6 +19,8 @@
             
                 <a href="#" class="text-center new-account">Créer un compte </a>
                 <span><a href="<?php echo $this->url('page_modif')?>">Modifier le Mot de passe </a></span>
+                <br/>
+                <sapn><a href="<?php echo $this->url('page_mdpo')?>">Mot de passe oublier</a></sapn>
                 </form>
             </div>
         </div>

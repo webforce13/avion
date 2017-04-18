@@ -79,7 +79,16 @@ class AdministrateurController extends Controller
 				// Vérification du des login 'identifiant' et 'le mot de passe actuelle'
 				$objetAuthentificationModel = new \W\Security\AuthentificationModel;
 				$mdpActuelle->isValidLoginInfo($login, $ActuelleMdp);
+
+				if(is_string($NouveauMdp) == is_string($VerifMdp))
+				{
+					$hash = password_hash($NouveauMdp, PASSWORD_DEFAULT);
+					$hash->update([
+					"MotDePasse"=>$hash],true);
+				}
 			}
+			else{}
+
 				
 
 
