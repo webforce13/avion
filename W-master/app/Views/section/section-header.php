@@ -19,6 +19,7 @@
 
 	<!-- lien pour le CSS -->
 	<link rel="stylesheet" href="../public/assets/css/contact.css">
+	
  	
 
 	<!-- lien pour le jquery -->
@@ -34,6 +35,7 @@
 </head>
 
 <body>
+	
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">

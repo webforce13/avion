@@ -26,6 +26,9 @@
 </head>
 
 <body>
+<header>
+		<button id="admin" class="btn btn-primary btn-xs" type="submit">ADMIN</button>
+	</header>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
