@@ -4,17 +4,15 @@
   background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%; 
+  height: 200px; 
   border: 1px solid white;
+  margin-bottom: 0px;  
 }
 
-#logotop {
-  width: 150px;
-}
-
-#admin{
-    position: relative;
-    float: right;
+#logonav{
+  width: 170px;
+  margin-left: 43%;
+  position: absolute;    
 }
 
 

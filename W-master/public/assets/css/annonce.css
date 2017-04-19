@@ -5,15 +5,15 @@
   background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
-  height: 150px; 
+  height: 200px; 
   border: 1px solid white;
-  margin-bottom: 0px;
-
+  margin-bottom: 0px;  
 }
 
-#logotop {
-  width: 150px;
-      
+#logonav{
+  width: 170px;
+  margin-left: 43%;
+  position: absolute;    
 }
 
 /************************** MAIN *******************************/
@@ -23,8 +23,8 @@
 
 main{
     background: url(../img/a.jpg);
-    background-size: cover;
-    background-position: center;
+   background-size: cover;
+   background-position: center;
 }
 
  img{
