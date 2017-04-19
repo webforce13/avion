@@ -2,18 +2,12 @@
               </header>
 
 
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Pieces</a></li>
-                        <li id="contact"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            
+
+            
 
 
+           
             <section id="section1">
                 <article id="article1">
                     <h2 id="titre2">Bienvenue chez AERO & ELECTRONICS RECYCLING</h2>

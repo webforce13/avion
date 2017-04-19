@@ -1,14 +1,22 @@
 body {
-  width: 1200px;
-  margin: auto;
+  max-width: 70%;
+  height: 70%;
+  background-size: cover;
   font-family: 'Suez One', serif; 
-background: url('../image/a.jpg');
-    background-position: top;
+  margin: auto;  
+   background: url(../img/a.jpg);
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
+/* url pour la police */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-
+/* la police de la page contacts*/
+*{
+  font-family: Raleway, cursive;
+}
 /**************************** HEADER ****************************/
 
 .navbar {  
@@ -25,10 +33,56 @@ background: url('../image/a.jpg');
 }
 
 
+/* Navigation */
 
 
 
+nav{
+  margin-top: 50px;
 
+}
+nav ul
+{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f3f4;
+    border-radius: 8px ;
+    font-family: 'Chapaza';
+}
+
+nav li
+{
+    float: left;
+
+}
+
+nav li a:hover{
+  background-color: #e8e8e8;
+}
+nav a
+{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    //border: 1px solid white;
+    border-radius: 3px ;
+    
+}
+
+nav a:hover
+{
+    color: white;
+
+    
+}
+
+
+#contact{
+  float: right;
+}
 
 
 

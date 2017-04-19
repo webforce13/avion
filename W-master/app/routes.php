@@ -10,7 +10,7 @@
 		['GET|POST', '/accueil', 'Default#accueil', 'page_accueil'],
 
 		/* La route pour l accueil */
-		['GET|POST', '/annonce', 'Default#annonce', 'page_annonce'],
+		['GET|POST', '/annonce', 'Annonce#annonce', 'page_annonce'],
 
 
 		/* La route pour l info */

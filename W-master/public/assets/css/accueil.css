@@ -21,6 +21,12 @@ body {
   width: 150px;
 }
 
+#admin{
+    position: relative;
+    float: right;
+}
+
+
 /************************** MAIN *******************************/
 
 .mainimg{
@@ -31,6 +37,8 @@ body {
 
 
                         /*effect panels*/
+
+
 
 .overflow {
   height: 100%;

@@ -19,6 +19,7 @@
 
 	<!-- lien pour le CSS -->
 	<link rel="stylesheet" href="../public/assets/css/contact.css">
+	
  	
 
 	<!-- lien pour le jquery -->
@@ -34,12 +35,21 @@
 </head>
 
 <body>
+	
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
         <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">
       </a>
+      	<ul>
+         	<li><a href="#">Accueil</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
+      	</ul>
       </div>
   </div>
 </nav>

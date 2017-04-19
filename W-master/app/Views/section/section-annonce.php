@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
     <section class="articleList">
@@ -153,5 +154,3 @@
         </section>
         </a>
         </li>
-    </section>
-

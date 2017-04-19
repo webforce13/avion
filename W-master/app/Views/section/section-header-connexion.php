@@ -38,7 +38,16 @@
         <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">
       </a>
       </div>
+      <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+            <li><a href="#">Pieces</a></li>
+           <li id="contact"><a href="#">Contact</a></li>
+         </ul>
   </div>
 </nav>
+
 
  <main>
