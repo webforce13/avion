@@ -236,6 +236,11 @@ class DefaultController extends Controller
  		$this->show("page/infoPage");
  	}
 
+ 	public function mdpo()
+ 	{
+ 		$message="";
+ 		$this->show("page/mdpo",['message' => $message]);
+ 	}
 }
 
 
