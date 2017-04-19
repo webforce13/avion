@@ -181,18 +181,12 @@ footer{
   padding: 10px;
   background-image: url(../img/z.jpg);
   background-size: cover;
-  border: 1px solid white; 
-  margin-top: 120px;   
+  border: 1px solid white;    
 }
 
 #logoplane{
   position: relative;
   width: 100px; 
-}
-
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
 }
 
 
@@ -201,5 +195,9 @@ ul {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 12px;
 }

@@ -213,18 +213,17 @@ footer{
   width: 100px; 
 }
 
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
-}
-
 
 ul {
   list-style: none;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 12px;
 }
 
 
