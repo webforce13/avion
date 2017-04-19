@@ -1,344 +1,243 @@
-
-/* Eléments principaux de la page */
-
-body
-{
-
-  color: black;
-  margin-top: 20px;
-  background: url('../image/a.jpg') no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#bloc_page
-{
-  width: 70%;
-  margin: auto;
-}
-/* url pour la police */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-*{
-  font-family: Raleway, cursive;
-}
-
-section h1, footer h1, nav a
-{
-    
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-/* Header */
-
-header
-{
-    
-    height: 100%;
-    background-image: url(../img/z.jpg);
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/a.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
-    border: 1px solid white;
-    text-align: center;
-    
+    -o-background-size: cover;
+    z-index: 10;
 }
 
-
-#logo img
-{
-    width: 150px;
-    
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-
-
-
-/* Navigation */
-
-nav{
-  
-  width: 100%;
-
-}
-nav ul
-{
-    list-style-type: none;
-    //margin-top: 20px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f2f3f4;
-    border-radius: 8px ;
-    //font-family: 'Chapaza';
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
 }
 
-nav li
-{
-    float: left;
-
+hr {
+    max-width: 400px;
+    border-color: #999999;
 }
 
-nav li a:hover{
-  background-color: #e8e8e8;
-}
-nav a
-{
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-    border-radius: 3px ;
-    
+/*************************************/
+/**********  HEADER  ****************/
+
+
+.brand,
+.address-bar {
+    display: none;
 }
 
-nav a:hover
-{
-    color: white;
-
-    
-}
-
-
-#contact{
-  float: right;
-}
-
-
-
-
-/************* Corps ***************/
-
-#section1
-{
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 50px;
-
-}
-
-article, aside
-{
-    text-align: justify;
-}
-
-#titre2{
-  padding-left: 20px;
-}
-#article1
-{
-    margin-right: 20px;
-    flex: 3;
-    background-color: #f2f2f2;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 8px ;
-}
-
-#partie1
-{
-  padding: 20px 20px 20px 20px;
-}
-.ico_categorie
-{
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-article p
-{
-    font-size: 0.8em;
-}
-
-aside
-{
-    flex: 1.2;
+.logo{
     position: relative;
-    background-color: #f2f3f4;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
-    padding: 10px;
-    color: black;
-    font-size: 0.9em;
+    margin-top: -100px;
+    z-index: 100;
 }
 
-
-#section2{
-  width: 100%;
-  margin-top: 10em;
-  margin-bottom: 10em;
-  
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-
-#article2{
-  box-shadow: 0px 2px 5px #1c1a19;
-  padding: 20px 20px 20px 20px;
-  background-color: #f2f2f2;
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 
 
+/*************************************/
+/**********  BODY  *******************/
 
-/* presentation images */
-#slider figure {
-  position: relative; 
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
+.img-full {
+    min-width: 100%;
 }
 
-#slider{
-  border: 1px solid grey;
-  border-radius: 5px 5px 5px 5px;
-  //box-shadow: -2px -5px -5px #1c1a19;
-  width: 100%; 
-  height: 350px;
-  max-width: 1000px; 
-  overflow: hidden;
-  
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
 }
 
-
-#slider figure img { 
-  width: 20%; 
-  height: auto; 
-  float: left; 
-  
+.brand-before {
+    margin: 15px 0;
 }
 
-
-
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
+.brand-name {
+    margin: 0;
+    font-size: 4em;
 }
 
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  left: 0;
-  text-align: left;
-  animation: 15s slidy infinite;
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
 }
 
-
-
-/*  *****  */
-
-
-
-
-
-
-
-
-#fleche_bulle
-{
-    position: absolute;
-    top: 100px;
-    left: -12px;
+.row{
+    margin-bottom: 50px;
 }
 
-#photo_zozor
-{
-    text-align: center;
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-#photo_zozor img
-{
-    border: 1px solid #181818;
+.box2 {
+    margin: 5px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
 
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
 
-/*aside img
-{
-    margin-right: 5px;
-}*/
-
-/* Bandeau */
-
-#bandeau{
-  width: 100%;
-  height: 8em;
-  background-color: #b4bac4;
+/* ******** Gallery ****** */
+.hover-zoomin a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.hover-zoomin img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
-/* Footer */
+/*************************************/
+/**********  FOOTER ******************/
 
-footer
-{
-    display: flex;
-    background-color: #a6bbdd;
-    padding-top: 25px;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border : 2px solid white;
-    text-align: center;
-
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-footer p, footer ul
-{
-    font-size: 0.8em;
+footer p {
+    margin: 0;
+    padding: 50px 0;
 }
 
-footer h1
-{
-    font-size: 1.1em;
+/************************************/
+/**********  MEDIA  *****************/
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
 }
 
-
-#local
-{
-    width: 32%;
-}
-
-#mes_photos
-{
-    width: 30%;
-}
-
-#mes_amis
-{
-    width: 31%;
-}
-
-#mes_photos img
-{
-    
-    margin-right: 2px;
-}
-
-#listes_amis
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-}
-
-#mes_amis ul
-{
-    list-style-image: url('images/ico_liensexterne.png');
-    padding-left: 2px;
-}
-
-#mes_amis a
-{
-    text-decoration: none;
-    color: #760001;
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
