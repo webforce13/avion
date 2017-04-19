@@ -23,11 +23,6 @@ class DefaultController extends Controller
 	}
 
 
-	public function annonce()
-	{
-		$this->show('page/annonce');
-	}
-
 	//Methode associer a la l'ajout des article dans la base de donné
 	public function ajoutArticle()
 	{
@@ -97,10 +92,10 @@ class DefaultController extends Controller
 			 	in_array($condition,array('Bon','Moyen','Mauvais'))   &&
 			 	is_string($description) && (mb_strlen($description) > 0) &&
 			 	is_numeric($quantite)   && (mb_strlen($quantite) > 0)
-			 	/* verife image */
 			  )
 			{
-
+				if(isset($image) && empty($image2) && empty($image3))
+				{
 					$objetArticle = new \Model\PiecesModel;
 					$result = $objetArticle->insert([
 
@@ -109,10 +104,43 @@ class DefaultController extends Controller
 					"EtatDeLaPiece" => $condition,
 					"Description" => $description,
 					"Quantite" => $quantite,
-					"Image" => $image,
-					"Image2"=> $image2,
-					"Image3"=> $image3
+					"Image" => $image
 					],true);
+				}
+
+
+				if(isset($image) && isset($image2) && empty($image3))
+				{
+					$objetArticle = new \Model\PiecesModel;
+					$result = $objetArticle->insert([
+
+					"Reference" => $reference,
+					"Designation" => $designation,
+					"EtatDeLaPiece" => $condition,
+					"Description" => $description,
+					"Quantite" => $quantite,
+					"Image"  => $image,
+					"Image2" => $image2
+					],true);
+				}
+
+				if(isset($image) && isset($image2) && isset($image3)) 
+				{
+					$objetArticle = new \Model\PiecesModel;
+					$result = $objetArticle->insert([
+
+					"Reference" => $reference,
+					"Designation" => $designation,
+					"EtatDeLaPiece" => $condition,
+					"Description" => $description,
+					"Quantite" => $quantite,
+					"Image"  => $image,
+					"Image2" => $image2,							
+					"Image3" => $image3							
+					],true);								
+				}
+						
+
 
 				// ca marche
 				if($result == false)
@@ -123,14 +151,10 @@ class DefaultController extends Controller
 				{
 					$message = "Bravo vous avez rajouter un article";
 				}
+			}	
 
+							
 
-			}
-			else
-			{
-				// une erreur
-				$message = "Erreur infos incorrecte";
-			}
 		}
 		$this->show('page/ajoutArticle',['message' => $message]);
 	} 
