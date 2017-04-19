@@ -110,7 +110,7 @@
                     <h2 class="intro-text text-center"><strong>Qui sommes nous</strong>
                     </h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque assumenda veritatis harum qui ullam ea, quae totam modi, rem minus cumque. Hic sit quas ipsum asperiores possimus recusandae eum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident magnam magni ut ab tenetur ipsa animi neque. Pariatur repellendus rem perspiciatis iste maiores soluta voluptates tenetur, consectetur voluptatem, explicabo.
+                    <p>Créée en 2000 sur l’Aéroport de Marseille Provence, Aero Electronics & Recycling est spécialisée dans le démentelement, le recyclage et la vente de pièces d'avion : roues, systèmes de navigation, sièges, équipements électroniques, huiles de moteurs, métaux sur aéronefs définis dans un domaine d’activité agréé.
                     </p>
                 </div>
 

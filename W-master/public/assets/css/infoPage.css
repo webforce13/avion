@@ -5,7 +5,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    z-index: 10;
+    z-index: 1;
 }
 
 h1,
@@ -42,9 +42,7 @@ hr {
 
 .logo{
     position: relative;
-    margin-top: -100px;
-    z-index: 100;
-}
+    }
 
 .navbar-brand {
     text-transform: uppercase;

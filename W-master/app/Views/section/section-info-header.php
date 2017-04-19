@@ -32,7 +32,7 @@
 
 <body>
     <div class="brand">Aero <br/> Electronics & Recycling</div>
-    <img src="../public/assets/images/logoAER2.png" width="300px" height="300px" class="img-responsive center-block logo">
+    <img src="../public/assets/images/logoAER2.png" width="200px" height="200px" class="img-responsive center-block logo">
     <div class="address-bar">Recyclage - Dementelement - Pieces d'avions</div>
 
 
