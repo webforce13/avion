@@ -1,25 +1,25 @@
-<h1>POSTER UN ARTICLE</h1>
+<h1 id="articlepost">POSTER UN ARTICLE</h1>
 
 
 <form action="" class="form-horizontal"  method="POST" enctype="multipart/form-data" style="margin-bottom: 0px;">
 
 
 <div class="form-group">
-	<label for="ref" class="col-sm-2 control-label">Référence</label>
+	<label for="ref" class="col-sm-2 control-label">Référence : </label>
 	<input id="ref" name="ref" placeholder="Entrer la Référence de votre article" type="text">
 </div>	
 
 	<br>
 
 <div class="form-group">	
-	<label for="designation" class="col-sm-2 control-label">Désignation</label>
+	<label for="designation" class="col-sm-2 control-label">Désignation : </label>
 	<input id="designation" name="designation" placeholder="Désignation de votre article" type="text">
 </div>
 
 	<br>
 
 <div>
-	<label for="condition" class="col-sm-2 control-label">Etat de l'article</label>	
+	<label for="condition" class="col-sm-2 control-label">Etat de l'article :</label>	
 	<label class="radio-inline">
   	<input type="radio" name="condition" id="Bon" value="Bon">BON
 	</label>
@@ -34,14 +34,14 @@
 	<br>
 
 <div class="form-group">
-	<label for="description" class="col-sm-2 control-label">La Description de la piece</label>
-	<textarea name="description" id="description" cols="30" rows="10"></textarea>	
+	<label for="description" class="col-sm-2 control-label">La Description de la piece :</label>
+	<textarea name="description" id="description"  cols="20" rows="10"></textarea>	
 </div>
 
 	<br>
 
 <div class="form-group">
-	<label for="quantite" class="col-sm-2 control-label">Les Quantitées des pieces Disponible </label>
+	<label for="quantite" class="col-sm-2 control-label">Les Quantitées des pieces Disponible :  </label>
 	<input type="number" min="0" name="quantite" id="quantite">
 </div>
 
@@ -62,7 +62,7 @@
 	<br>	
 
 	
-	<button type="submit" name="btn" class="btn">ENVOYER</button>
+	<button type="submit" name="btn" class="btn btn-primary">ENVOYER</button>
 	<input type="hidden"  name="operation" value="ajouter">
 	<div>
 		<?php if (isset($message)) echo $message; ?>

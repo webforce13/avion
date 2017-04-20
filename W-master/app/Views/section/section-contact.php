@@ -28,7 +28,8 @@
 
 
 		<br>
-		<input type="submit" name="operation" value="Envoyer">
+		<button type="submit" name="btn" class="btn btn-primary">ENVOYER</button>
+		<input type="hidden"  name="operation" value="ajouter">
 		<div class="message">
 			<?php if (isset($message)) echo $message; ?>
 		</div>

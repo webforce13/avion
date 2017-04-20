@@ -1,30 +1,18 @@
-body {
-  max-width: 100%;
-  height: 100%;
-  background-size: cover;
-  font-family: 'Suez One', serif;   
-}
-
-
-
 /**************************** HEADER ****************************/
 
 .navbar {  
   background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%; 
+  height: 200px; 
   border: 1px solid white;
+  margin-bottom: 0px;  
 }
 
-#logotop {
-  width: 150px;
-  padding-left: 45%;
-}
-
-#admin{
-    position: relative;
-    float: right;
+#logonav{
+  width: 170px;
+  margin-left: 43%;
+  position: absolute;    
 }
 
 
@@ -36,11 +24,7 @@ body {
   background-position: center;
 }
 
-
-                        /*effect panels*/
-
-
-
+                        /*effet panneau*/
 .overflow {
   height: 100%;
   overflow: hidden;
@@ -165,7 +149,7 @@ body {
   
 }
 
-                          /* text dans panels */
+                          /* texte dans panneau */
 
 h1.panels__headline{
   text-align: center;
@@ -179,6 +163,7 @@ h1.panels__headline{
   font-size: 30px; 
 }
 
+                        /* responsive */
 
 @media (max-width: 640px) {
 
@@ -330,18 +315,15 @@ footer{
   width: 100px; 
 }
 
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
-}
-
 
 ul {
   list-style: none;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
-
+.copyright{
+  font-size: 12px;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+<head>
   <meta charset="UTF-8">
   <title>HOMEPAGE</title>
 
@@ -14,7 +14,7 @@
   <link href="../public/assets/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- lien pour le CSS -->
-  <link rel="stylesheet" href="../public/assets/css/infoPage.css">
+  <link rel="stylesheet" href="../public/assets/css/administrateur.css">
 
   <!-- lien pour le jquery -->
   <script
@@ -24,13 +24,9 @@
   </script>
   
 </head>
-    
 
-
-
-
-    <body>
-        <nav class="navbar navbar-default">
+<body>
+  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -64,17 +60,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-                   
-                   <!-- bandeau défilant (avec css) -->
-            <b><font color="red"><marquee direction="left" behavior="scroll" scrollamount="5" width="100%" scrolldelay="50" style="font-family: Arial, Verdana; color: red; font-size: 20; background-color: #f2f2f2; border-radius: 15px 15px 15px 15px ">
 
-            Prix des métaux au kilo en euros (avril 2017) :  Or 37950 € / Platine  28775 € / Argent 552 € / Palladium 24280 € / 
-
-            </marquee></b></font> 
-                    
-                </div>
-                
-                
-          
-            
-            
+ <main>
