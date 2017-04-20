@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-  <meta charset="UTF-8">
-  <title>HOMEPAGE</title>
 
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<head>
 
-  
-  <!-- Boostrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="../public/assets/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- lien pour le CSS -->
-  <link rel="stylesheet" href="../public/assets/css/infoPage.css">
+    <title>Aero electronics & recycling</title>
 
-  <!-- lien pour le jquery -->
-  <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous">
-  </script>
-  
+    <!-- Bootstrap CSS -->
+    <link href="../public/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="../public/assets/css/infoPage.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-    
+
+<body>
+    <div class="brand">Aero <br/> Electronics & Recycling</div>
+    <img src="../public/assets/images/logoAER2.png" width="200px" height="200px" class="img-responsive center-block logo">
+    <div class="address-bar">Recyclage - Dementelement - Pieces d'avions</div>
 
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- transformation nav -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- bandeau défilant (avec css) -->
+            <b><marquee direction="left" behavior="scroll" scrollamount="5" width="100%" scrolldelay="30" style="font-family: Arial, Verdana; color: grey; font-size: 20; background-color: #f2f2f2; border-radius: 15px 15px 15px 15px ">
 
-
-    <body>
-        <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="accueil">
-        <img id="logonav" alt="aero" src="../public/assets/img/logo AER.png">
-      </a>
-    </div>
-  </div>
-    </div>
-
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-      <!-- mettre ici element navbar -->        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
-        <li><a href="connexion">Admin</a></li>
-         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-                   
-                   <!-- bandeau défilant (avec css) -->
-            <b><font color="red"><marquee direction="left" behavior="scroll" scrollamount="5" width="100%" scrolldelay="50" style="font-family: Arial, Verdana; color: red; font-size: 20; background-color: #f2f2f2; border-radius: 15px 15px 15px 15px ">
-
-            Prix des métaux au kilo en euros (avril 2017) :  Or 37950 € / Platine  28775 € / Argent 552 € / Palladium 24280 € / 
+            Prix des métaux au kilo en euros (avril 2017) :  Or 37950 € / Platine  28775 € / Argent 552 € / Palladium 24280 € / Fer 0,08 €/ Acier 0.5 € / Cuivre 5€
 
             </marquee></b></font> 
                     
                 </div>
+                
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
                 
                 
           
