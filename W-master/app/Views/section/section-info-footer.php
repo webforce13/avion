@@ -1,26 +1,33 @@
-               <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2017</p>
-                </div>
-            </div>
+            </main> 
+  <footer>
+      <ul>
+        <li><a href="" >A Propos De Nous</a></li>
+      </ul>  
+
+      <ul>
+        <img src="../public/assets/img/logoA.png" alt="logoplane" id="logoplane">
+        <br>
+        <br>
+        <section class="footer-section">
+        <span>Contactez Nous :</span>
+        <br>
+        <br>
+        <span><a href="contact" title="Email"><i class="fa fa-envelope-o">  -  Formulaire de Contact</i></a></span>
+        <br>
+        <br>
+        <span><a href="" title="Telephone"><i class="fa fa-phone">  -  06.12.34.56.78</i></a></span>
+        </section>
+        </ul>
+<br>
+<br>
+        <span class="copyright">©2017 “DEEE RECYCLAGE AERONAUTIQUE - Marignane, France - All Rights Reserved - </span>
         </div>
-    </footer>
+        </section>
+  </footer>
+  
+  <script src="../public/assets/js/main.js"></script>
+  <script src="../public/assets/js/index.js"></script>
 
-    <!-- jQuery -->
-    <script src="../public/assets/js/jquery.js"></script>
+  </body>
+  </html>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="../public/assets/js/bootstrap.min.js"></script>
-
-    <!-- Script pour activer le carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 3000 //changer la vitesse
-    })
-    </script>
-
-</body>
-
-</html>

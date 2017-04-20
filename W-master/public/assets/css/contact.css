@@ -32,6 +32,17 @@ body {
 /************************** MAIN *******************************/
 
 
+/* url pour la police */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* la police de la page contacts*/
+*{
+	font-family: Raleway, cursive;
+}
+
+
+
 
 h1{
 	color: rgb(34, 147, 34);

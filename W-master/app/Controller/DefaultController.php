@@ -150,6 +150,11 @@ class DefaultController extends Controller
 		}
  		$this->show("page/mdpo",['message' => $message]);
  	}
+
+ 	public function administrateur()
+	{
+		$this->show('page/administrateur');
+	}
 }
 
 

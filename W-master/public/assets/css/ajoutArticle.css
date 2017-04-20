@@ -1,113 +1,60 @@
 
-body{
-  max-width: 70%;
-  height: 70%;
-  background-size: cover;
-  font-family: 'Suez One', serif; 
-  margin: auto;  
-  background: url(../img/a.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/* url pour la police */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-/* la police de la page contacts*/
-*{
-  font-family: Raleway, cursive;
-}
 /**************************** HEADER ****************************/
 
 .navbar {  
   background-image: url(../img/z.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%; 
+  height: 200px; 
   border: 1px solid white;
+  margin-bottom: 0px;  
 }
 
-#logotop {
-  width: 150px;
-  padding-left: 45%;    
+#logonav{
+  width: 170px;
+  margin-left: 43%;
+  position: absolute;    
 }
-
-/* Navigation */
-
-nav{
-  margin-top: 50px;
-
-}
-nav ul
-{
-    list-style-type: none;
-    margin-top: 20px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f2f3f4;
-    border-radius: 8px ;
-    font-family: 'Chapaza';
-}
-
-nav li
-{
-    float: left;
-
-}
-
-nav li a:hover{
-  background-color: #e8e8e8;
-}
-nav a
-{
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 3px ;
-    
-}
-
-nav a:hover
-{
-    color: white;
-
-    
-}
-
-
-#contact{
-  float: right;
-}
-
 
 /************************** MAIN *******************************/
 
 
-/* url pour la police */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-
-/* la police de la page contacts*/
-*{
-  font-family: Raleway, cursive;
+body{
+  background: url(../img/a.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
 form{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #8fc35f;
+  background: rgba(143,195,95,0.7);
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  padding: 10px;
+  padding: 30px 10px;
   color: black;
-  font-weight: bold;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  font-weight: bold;  
+  box-shadow: 0px 0px 39px 5px rgba(0,0,0,1);
+  border-radius: 5px;
 }
 
 
 textarea{
   border-radius: 10px;
-  width: 50%;
+  width: 40%;  
+}
+
+ #ref, #designation, #description, #quantite, #image{
+  box-shadow: 0px 0px 39px 5px rgba(0,0,0,1);
+}
+
+#articlepost{
+  text-align: center;
+  color: black;
 }
 
 
@@ -162,17 +109,13 @@ footer{
   padding: 10px;
   background-image: url(../img/z.jpg);
   background-size: cover;
-  border: 1px solid white;    
+  border: 1px solid white; 
+  margin-top: 50px;   
 }
 
 #logoplane{
   position: relative;
   width: 100px; 
-}
-
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
 }
 
 
@@ -181,7 +124,12 @@ ul {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
+
+.copyright{
+  font-size: 12px;
+}
+
 
 
