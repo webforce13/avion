@@ -1,10 +1,11 @@
+
 body {
   max-width: 70%;
   height: 70%;
   background-size: cover;
   font-family: 'Suez One', serif; 
   margin: auto;  
-   background: url(../img/a.jpg);
+  background: url(../img/a.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -34,8 +35,6 @@ body {
 
 
 /* Navigation */
-
-
 
 nav{
   margin-top: 50px;
@@ -67,7 +66,6 @@ nav a
     color: black;
     padding: 14px 16px;
     text-decoration: none;
-    //border: 1px solid white;
     border-radius: 3px ;
     
 }

@@ -27,10 +27,19 @@
 
 <body>
   <nav class="navbar navbar-default">
-  
+  <div class="container-fluid row-md-5">
     <div class="navbar-header">      
         <img alt="Brand" src="../public/assets/img/logo AER.png" id="logotop">      
       </div>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Pieces</a></li>
+                        <li><a href="#">Pieces</a></li>
+                        <li><a href="#">Pieces</a></li>
+                        <li><a href="#">Pieces</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                    </ul>
+                
   </div>
 </nav>
 

@@ -79,10 +79,10 @@ class DefaultController extends Controller
 
 	
 
-	public function article()
+	public function article($id)
 	{
 		
-		$this->show("page/article");
+		$this->show("page/article",['id'=>$id]);
 	}
  	
  	public function info()

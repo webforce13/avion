@@ -9,16 +9,13 @@
 		/* La route pour l accueil */
 		['GET|POST', '/accueil', 'Default#accueil', 'page_accueil'],
 
-		/* La route pour l accueil */
-		['GET|POST', '/annonce', 'Annonce#annonce', 'page_annonce'],
-
-
 		/* La route pour l info */
 		['GET|POST', '/info', 'Default#info', 'page_info'],
 
 		/* La route pour article */
-		['GET|POST', '/article', 'Default#article', 'page_article'],
-		['GET|POST', '/article-detail/[:url]', 'Default#articleDetail', 'page_article_detail'],		
+		['GET|POST', '/article-[:id]', 'Default#article', 'page_article'],
+		/* La route pour les annonces */
+		['GET|POST', '/annonce', 'Annonce#annonce', 'page_annonce'],		
 		
 		/* La route pour article */
 		['GET|POST', '/ajoutArticle', 'Administrateur#ajoutArticle', 'Administrateur_ajoutArticle'],

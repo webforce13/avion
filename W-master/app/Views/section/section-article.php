@@ -5,28 +5,19 @@
 // LA METHODE findAll EST DEFINIE DANS LA CLASSE \W\Model\Model
 // LA METHODE findAll RENVOIE UN TABLEAU DE TABLEAU 
 $objetPiecesModel = new \Model\PiecesModel;
-$tabResult = $objetPiecesModel-> findAll("Designation", "DESC");
+$tabinfo = $objetPiecesModel-> find($id);
 
-// JE PEUX PARCOURIR LA TABLE POUR RECUPERER CHAQUE LIGNE
-foreach ($tabResult as $index => $tabinfo) 
-{
-  // pour chaque ligne je recupere une colonne dans une variable
-  $designation = $tabinfo['Designation'];
-  $reference   = $tabinfo['Reference'];
-  $condition   = $tabinfo['EtatDeLaPiece'];
-  $description = $tabinfo['Description'];
-  $quantite    = $tabinfo['Quantite'];
-  $image       = $tabinfo['Image'];
-  $image2      = $tabinfo['Image2'];
-  $image3      = $tabinfo['Image3'];
 
-  /*
-  $urlVBDD     = $tabinfo['url'];
+// pour chaque ligne je recupere une colonne dans une variable
+$designation = $tabinfo['Designation'];
+$reference   = $tabinfo['Reference'];
+$condition   = $tabinfo['EtatDeLaPiece'];
+$description = $tabinfo['Description'];
+$quantite    = $tabinfo['Quantite'];
+$image       = $tabinfo['Image'];
+$image2      = $tabinfo['Image2'];
+$image3      = $tabinfo['Image3'];
 
-  $href= $this->url("page_article",["url" => $urlVBDD]);
-  */
-
-}
 
 
 // la gestion des photos vide ou remplis pour l'image variable $PHPimage 

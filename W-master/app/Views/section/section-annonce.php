@@ -20,6 +20,8 @@
                 $designation1 = $tabinfo['Designation'];
                 $image1       = $tabinfo['Image'];
                 $description1 = $tabinfo['Description'];
+                $id = $tabinfo['id'];
+                $annonce = $this->url("page_article",['id'=> $id]);
     ?>
     
     <!--********************ANNONCE 1 *********************-->
@@ -27,7 +29,7 @@
     <!-- lien article -->
     <ul>       
         <li  id="annonce">
-            <a href="article" title="<?php echo $designation1 ?>">
+            <a href="<?php echo $annonce ?>" title="<?php echo $designation1 ?>">
 
     <!-- Liste d'image -->                        
             <div class="item_image">                                

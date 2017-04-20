@@ -52,14 +52,14 @@ class AdministrateurController extends Controller
 	/**************************************************************************/
 	// la page administrateur 
 
-	public function admin()
+	/*public function admin()
 	{
 		// ON VEUT PROTEGER L'ACCES A CETTE PAGE
     	$this->allowTo([ "admin", "super-admin" ]);
 		// on utilise un objets de la classe 
 		$this->show("page/modif",["message"=>$message]);
 
-	}
+	}*/
 
 	/*****************************************************************************/
 	// la page d'ajout article
@@ -68,7 +68,7 @@ class AdministrateurController extends Controller
 	public function ajoutArticle()
 	{
 		// ON VEUT PROTEGER L'ACCES A CETTE PAGE
-    	//$this->allowTo([ "admin", "super-admin" ]);
+    	$this->allowTo([ "admin", "super-admin" ]);
 
 		// la variable ou afficher les messages
 		$message="";
