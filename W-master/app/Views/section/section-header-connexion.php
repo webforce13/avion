@@ -39,12 +39,10 @@
       </a>
       </div>
       <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Pieces</a></li>
-            <li><a href="#">Pieces</a></li>
-            <li><a href="#">Pieces</a></li>
-            <li><a href="#">Pieces</a></li>
-           <li id="contact"><a href="#">Contact</a></li>
+            <li><a href="accueil">Accueil</a></li>
+            <li><a href="annonce">Annonce</a></li>
+            <li><a href="info">Recyclage</a></li>
+            <li id="contact"><a href="contact">Contact</a></li>
          </ul>
   </div>
 </nav>

@@ -27,7 +27,7 @@
 
 <body>
 <header>
-		<button type="button" class="btn btn-success" id="admin" href="connexion">Admin</button>
+		<button type="button" class="btn btn-success" id="admin"><a href="connexion">Admin</a></button>
 </header>
   <nav class="navbar navbar-default">
   <div class="container-fluid">

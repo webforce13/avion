@@ -1,8 +1,7 @@
 
-
-
-<section class="articleList">
-
+    <div class="row">
+            <section class="articleList">
+            <h2 class="intro-text text-center">Les annonces</h2>
     <article class="filtreList">
         <div class="selectWrapper blue">
             <select id="listSorting" class="select" onchange="listSortingChange(this); xt_click(this,'C','8','ad_search::'+this.options[this.selectedIndex].getAttribute('data-value'),'N');">
@@ -27,13 +26,13 @@
 
     <!-- lien article -->
     <ul>       
-        <li itemscope="" itemtype=""  id="annonce">
-            <a href="" title="" class="">
+        <li  id="annonce">
+            <a href="article" title="<?php echo $designation1 ?>">
 
     <!-- Liste d'image -->                        
             <div class="item_image">                                
                 <span class="item_imagePic"></span>                                 
-                <span class="lazyload loaded"><img itemprop="image" src="<?php echo $image1 ?>" alt="<?php echo $designation1 ?>"></span>
+                <span class="lazyload loaded"><img class="image" itemprop="image" src="<?php echo $image1 ?>" alt="<?php echo $designation1 ?>"></span>
             </div>    
                             
     <!-- Liste d'info -->
@@ -47,11 +46,15 @@
                     <p><?php echo $description1; ?></p>
             </section>
             </a>
-        </li>
-    </ul>
-    <?php 
-    endforeach;
-    ?>
-</section>
+                    </li>
+                </ul>
+                <?php 
+                endforeach;
+                ?>
+            </section>
+        
+    </div>    
+</div>
 
+    
     

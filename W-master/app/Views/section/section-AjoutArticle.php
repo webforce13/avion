@@ -13,7 +13,7 @@
 
 <div class="form-group">	
 	<label for="designation" class="col-sm-2 control-label">Désignation</label>
-	<input id="designation" name="designation" placeholder="Désignation de votre article" type="text">
+	<input id="designation" name="designation" placeholder="Désignation de votre article" type="text" required>
 </div>
 
 	<br>
@@ -42,14 +42,14 @@
 
 <div class="form-group">
 	<label for="quantite" class="col-sm-2 control-label">Les Quantitées des pieces Disponible </label>
-	<input type="number" min="0" name="quantite" id="quantite">
+	<input type="number" min="0" name="quantite" id="quantite" required>
 </div>
 
 	<br>
 
 <div class="form-group">	
 	<label for="image" class="col-sm-2 control-label">Inserée photo 1:</label>
-	<input name="image" id="image" type="file">
+	<input name="image" id="image" type="file" required>
 </div>
 <div class="form-group">	
 	<label for="image" class="col-sm-2 control-label">Inserée photo 2:</label>

@@ -16,7 +16,7 @@
         <svg class="arrow arrow--right" width="70" height="70" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z" fill="none"/><path d="M12 4l-1.41 1.41 5.58 5.59h-12.17v2h12.17l-5.58 5.59 1.41 1.41 8-8z"/></svg>
       </div>
       <div class="panels__side panels__side--inner-right">
-        <h4>"Des pièces détachées de l'aviation pour alimenter votre coté artistique" - Cliquez <a href="article">ici</a> ." </h4>
+        <h4>"Des pièces détachées de l'aviation pour alimenter votre coté artistique" - Cliquez <a href="annonce">ici</a> ." </h4>
         
       </div>
       </article>

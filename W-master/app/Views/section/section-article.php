@@ -1,5 +1,4 @@
 
-<h1 id="titrearticle">Annonces de pièces détachées</h1>
 
 
 <?php
@@ -28,6 +27,7 @@ foreach ($tabResult as $index => $tabinfo)
   */
 
 }
+
 
 // la gestion des photos vide ou remplis pour l'image variable $PHPimage 
 if(isset($image))
@@ -63,6 +63,7 @@ else
            
 echo
 <<<CODEHTML
+  <h1 id="titrearticle">$designation</h1>
   <div class="wrapper">
     <div class="carousel-container">    
       <ul class="carousel">

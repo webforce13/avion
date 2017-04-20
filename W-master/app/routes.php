@@ -21,10 +21,12 @@
 		['GET|POST', '/article-detail/[:url]', 'Default#articleDetail', 'page_article_detail'],		
 		
 		/* La route pour article */
-		['GET|POST', '/ajoutArticle', 'Default#ajoutArticle', 'page_ajoutArticle'],
+		['GET|POST', '/ajoutArticle', 'Administrateur#ajoutArticle', 'Administrateur_ajoutArticle'],
 		
 		/* La route pour ce connecter */
-		['GET|POST', '/connexion', 'Default#connexion', 'page_connexion'],
+		['GET|POST', '/connexion', 'Users#connexion', 'users_connexion'],
+		['GET|POST', '/users/logout', 'Users#logout', 'users_logout'],
+
 
 		/* La route pour modifier mot de passe */
 		['GET|POST', '/modif', 'Administrateur#modif', 'page_modif'],
